@@ -1,0 +1,19 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'en';
+---
+<PageLayout title={`Contact – ${SITE_NAMES[lang]}`} description="Contact Elpriskollen: report a wrong grid fee, a changed tax rate or a calculation error. We reply by email and every correction is dated on the site." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We read everything about the calculations.</p>
+    <h2>Report an error</h2>
+    <p>Has your grid company changed its price list since 1 January, or does the transfer fee not match your bill? Send the company name, your grid area (on the bill or on Nätområden.se), your main fuse size and, if possible, a link to the price list. For tax questions, give the source. Corrections go into the parameter file with a date and show on every page at once.</p>
+    <h2>What we cannot help with</h2>
+    <p>We cannot see your consumption, contract or bill, and we do not broker contracts. Billing questions go to the retailer or grid company; disputes can go to the National Board for Consumer Disputes (ARN), and Energimarknadsbyrån gives free guidance, partly in English.</p>
+    <h2>Embedding</h2><p>The embed code is on the <a href={route('widget', lang)}>embedding page</a>. Publisher and host: <a href={route('terms', lang)}>legal notice</a>.</p>
+  </div>
+</PageLayout>

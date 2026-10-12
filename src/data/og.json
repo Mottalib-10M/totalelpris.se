@@ -1,0 +1,13 @@
+{
+ "accent": "#006AA7",
+ "symbol": "eclair",
+ "variants": [
+  {
+   "file": "og-sv.png",
+   "title": "Elpris idag",
+   "subtitle": "",
+   "badge": "2026",
+   "brand": "Elpris idag"
+  }
+ ]
+}

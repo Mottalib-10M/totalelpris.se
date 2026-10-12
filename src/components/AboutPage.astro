@@ -1,0 +1,52 @@
+---
+/** À propos (page de confiance, RECETTE §8.2) : qui publie, pourquoi ce site, comment il est financé. */
+import PageLayout from '../layouts/PageLayout.astro';
+import LegalIdentity from './LegalIdentity.astro';
+import { route, type Locale } from '../i18n/routes';
+import { P } from '../lib/engine/params';
+import { rangordna } from '../lib/engine/index';
+import { breadcrumbSchema, profilePageSchema } from '../lib/seo';
+import { CONTACT_EMAIL } from '../data/site-config';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const sv = lang === 'sv';
+const antal = rangordna('L16').length;
+const title = sv ? 'Om Elpriskollen 2026: vem som räknar och varför' : 'About Elpriskollen 2026: who does the sums and why';
+const description = sv ? 'Om Elpriskollen 2026: utgivaren Radif Partners, varför vi räknar totalpriset på el i stället för att visa börspriset, hur sajten finansieras och hur fel rättas.' : 'About Elpriskollen 2026: the publisher Radif Partners, why we work out the all-in electricity price instead of the exchange price, how it is funded, how errors are fixed.';
+const h1 = sv ? 'Om Elpriskollen' : 'About Elpriskollen';
+const path = route('about', lang);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: sv ? 'Start' : 'Home', path: route('home', lang) }, { name: h1, path }])]} breadcrumbs={[{ label: h1 }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1></header>
+  {sv ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Elpriskollen ges ut av Radif Partners, ett fristående förlag av kalkylatorer. Sajten finns för en enda fråga som de stora prissajterna lämnar obesvarad: vad kostar en kilowattimme mig, när skatten, momsen och mitt eget elnät är med? Den som slår upp elpriset idag får ett börspris utan moms, ofta med minsta och högsta värde i fel ordning och en uppmaning att byta elavtal. Vi räknar i stället ut totalpriset och visar varje del för sig.</p>
+    <h2>Det vi gör bättre än förstasidan på Google</h2>
+    <p>Den mest besökta prissajten visar spotpriset »utan moms och andra skatter« och lämnar resten åt läsaren. Elpriskollen gör om spotpriset till det du betalar, med energiskatt {String(P.skatt.energiskatt_ore).replace('.', ',')} öre exklusive moms {P.year}, moms och överföringsavgiften i ditt eget nätområde bland {antal} som Energimarknadsinspektionen redovisar. Den räknar ut vad en tvätt eller en laddning kostar när du vill köra den, och den visar med SCB:s statistik vad rörliga och fasta avtal faktiskt har kostat i varje elområde.</p>
+    <h2>Varför vi inte visar spotpriset</h2>
+    <p>Dagspriserna ägs av elbörsen och får inte återpubliceras utan licens; ENTSO-E:s villkor för fri återanvändning omfattar dem inte. Vi följer det. Du ser priset gratis hos din elhandlare och skriver in det här, eller klistrar in hela dygnets kvartspriser.</p>
+    <h2>Finansiering och oberoende</h2>
+    <p>Sajten säljer inga elavtal, har inga provisioner från elhandlare och förmedlar inga kontaktuppgifter. Om annonser läggs till blir det högst tre per sida, aldrig ovanför kalkylatorn och aldrig från ett elbolag som kan påverka siffrorna. Ingen elhandlare eller nätägare kan betala för att nämnas.</p>
+    <h2>Så arbetar vi</h2>
+    <p>Varje skattesats, avgift och gräns står i en parameterfil med källa och datum. Källorna är lagen om skatt på energi, Skatteverket, Energimarknadsinspektionen, SCB, Svenska kraftnät, Energimyndigheten och Energimarknadsbyrån. Beräkningarna testas automatiskt vid varje uppdatering. Läs <a href={route('method', lang)}>metoden</a> och den <a href={route('editorial', lang)}>redaktionella policyn</a>.</p>
+    <h2>Utgivare</h2>
+    <LegalIdentity lang={lang} />
+    <p>Fel och förslag: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>Elpriskollen is published by Radif Partners, an independent publisher of calculators. The site exists for one question the big price sites leave unanswered: what does a kilowatt-hour cost me once tax, VAT and my own grid are included? Look up today’s electricity price in Sweden and you get an exchange price before VAT, often with lowest and highest values the wrong way round and a prompt to switch contract. We work out the all-in price instead and show each part separately.</p>
+    <h2>What we do better than the first Google result</h2>
+    <p>The most visited price site shows the spot price “without VAT and other taxes” and leaves the rest to the reader. Elpriskollen turns the spot price into what you pay, with energy tax of {P.skatt.energiskatt_ore} öre before VAT in {P.year}, VAT and the transfer fee of your own grid area among the {antal} listed by the Energy Markets Inspectorate. It works out what a wash or a car charge costs when you want to run it, and uses Statistics Sweden data to show what variable and fixed contracts have actually cost in each bidding zone.</p>
+    <h2>Why we do not show the spot price</h2>
+    <p>Day-ahead prices belong to the power exchange and may not be republished without a licence; ENTSO-E’s free re-use terms do not cover them. We respect that. You see the price free from your retailer and type it in here, or paste the day’s quarter-hour prices.</p>
+    <h2>Funding and independence</h2>
+    <p>The site sells no contracts, takes no commission from retailers and passes on no contact details. If ads are added, there will be at most three per page, never above the calculator and never from an energy company that could sway the figures. No retailer or grid owner can pay to be mentioned.</p>
+    <h2>How we work</h2>
+    <p>Every tax rate, fee and threshold sits in a parameter file with source and date. The sources are the Energy Tax Act, the Swedish Tax Agency, the Energy Markets Inspectorate, Statistics Sweden, Svenska kraftnät, the Swedish Energy Agency and Energimarknadsbyrån. Calculations are tested automatically at every update. Read the <a href={route('method', lang)}>method</a> and the <a href={route('editorial', lang)}>editorial policy</a>.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Errors and suggestions: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+  </div>
+  )}
+</PageLayout>

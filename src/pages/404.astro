@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { route as r, ROUTES } from '../i18n/routes';
+const route = (id: string, l: 'sv' | 'en') => (ROUTES.some((x) => x.id === id) ? r(id, l) : r('home', l));
+---
+<BaseLayout title="Sidan finns inte – Elpriskollen" description="Sidan finns inte. Page not found." lang="sv" noindex={true}>
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <h1 class="text-3xl font-bold text-navy-900">Sidan finns inte</h1>
+    <p class="mt-4 text-navy-700">Adressen leder ingenstans, kanske för att sidan har bytt namn. Det du letade efter finns troligen här:</p>
+    <ul class="mt-4 list-disc space-y-1 pl-5 text-navy-800">
+      <li><a class="underline" href={route('home', 'sv')}>Elpris idag med skatt och nätavgift</a></li>
+      <li><a class="underline" href={route('elpris-imorgon', 'sv')}>Elpris imorgon: räkna på morgondagens kvartspriser</a></li>
+      <li><a class="underline" href={route('jamfor-natavgift', 'sv')}>Jämför nätavgiften i ditt nätområde</a></li>
+      <li><a class="underline" href={route('elpriser-per-manad', 'sv')}>Elpriser per månad sedan 2022</a></li>
+    </ul>
+    <p class="mt-8 text-navy-700" lang="en">Page not found. The English pages start here: <a class="underline" href={route('home', 'en')}>electricity price today in Sweden, all-in</a>.</p>
+  </div>
+</BaseLayout>

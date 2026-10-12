@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema } from '../../lib/seo';
+const lang = 'en';
+const code = `<iframe src="${SITE_URL}/embed/electricity-price/" title="All-in electricity price – calculator" width="100%" height="1250" style="border:0;max-width:1100px" loading="lazy"></iframe>`;
+---
+<PageLayout title="Embed the price calculator" description="Copy the code and paste it on your page. Housing associations, homeowners’ groups and local news sites use it to let readers work out what electricity" lang={lang} noindex={true} jsonLd={[breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Widget', path: route('widget', lang) }])]} breadcrumbs={[{ label: 'Widget' }]} showAuthor={false}>
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Embed the price calculator</h1>
+    <p class="mt-3 text-lg text-navy-700">Copy the code and paste it on your page. Housing associations, homeowners’ groups and local news sites use it to let readers work out what electricity costs with tax and grid fee.</p>
+  </header>
+  <div class="prose prose-slate max-w-none">
+    <pre class="overflow-x-auto rounded-lg bg-navy-900 p-4 text-sm text-white"><code>{code}</code></pre>
+    <p>Terms: the link under the calculator must stay visible, the calculator must not be altered and it comes without warranty. Energy tax and grid fees are updated here, so your embed follows automatically. Swedish version: <code>{`${SITE_URL}/embed/elpris/`}</code>.</p>
+    <p><a href={route('contact', lang)}>Contact</a></p>
+  </div>
+  <div class="mt-8 overflow-hidden rounded-xl border border-navy-200">
+    <iframe src="/embed/electricity-price/" title="All-in electricity price – calculator" width="100%" height="1250" style="border:0" loading="lazy"></iframe>
+  </div>
+</PageLayout>

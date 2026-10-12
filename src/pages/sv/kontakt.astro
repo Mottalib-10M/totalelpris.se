@@ -1,0 +1,19 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'sv';
+---
+<PageLayout title={`Kontakt – ${SITE_NAMES[lang]}`} description="Kontakta Elpriskollen: rapportera en felaktig nätavgift, en ändrad skattesats eller ett räknefel. Vi svarar på e-post och rättar med datum." lang={lang} noindex={true} breadcrumbs={[{ label: 'Kontakt' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Kontakt</h1>
+    <p>Skriv till <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Vi läser allt som gäller beräkningarna.</p>
+    <h2>Rapportera ett fel</h2>
+    <p>Har ditt nätföretag ändrat sin prislista sedan den 1 januari, eller stämmer överföringsavgiften inte med din faktura? Skicka nätföretagets namn, ditt nätområde (står på fakturan eller på Nätområden.se), säkringsstorleken och gärna en länk till prislistan. Gäller det skatten, ange källan. Rättelser förs in i parameterfilen med datum och syns på alla sidor samtidigt.</p>
+    <h2>Det vi inte kan hjälpa till med</h2>
+    <p>Vi kan inte se din förbrukning, ditt avtal eller din faktura och vi förmedlar inga elavtal. Frågor om en faktura går till elhandlaren eller nätföretaget; tvister kan prövas av Allmänna reklamationsnämnden, och Energimarknadsbyrån ger kostnadsfri vägledning.</p>
+    <h2>Bädda in</h2><p>Koden för att bädda in kalkylatorn finns på <a href={route('widget', lang)}>sidan om inbäddning</a>. Utgivare och värd: <a href={route('terms', lang)}>villkor</a>.</p>
+  </div>
+</PageLayout>

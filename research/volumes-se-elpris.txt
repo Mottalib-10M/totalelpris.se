@@ -1,0 +1,13 @@
+# Suède, prix de l'électricité — extrait de reports/volumes-2026-10-12-rpm/europe-commonwealth.txt (Keyword Planner, objetech, sept. 2025 – août 2026, relevé 2026-10-12). Colonne 3 = enchère haute.
+elpris idag
+100 k – 1 M
+elpris
+10 k – 100 k
+elpriser
+10 k – 100 k
+elpris imorgon
+10 k – 100 k
+elstöd
+1 k – 10 k
+elpris i dag
+1 k – 10 k

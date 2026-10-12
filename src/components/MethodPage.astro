@@ -1,0 +1,90 @@
+---
+/** Méthode et sources (page de confiance, RECETTE §8.2) : formules, données, validations, limites. */
+import PageLayout from '../layouts/PageLayout.astro';
+import { route, type Locale } from '../i18n/routes';
+import { P } from '../lib/engine/params';
+import { totalpris, rangordna, natTariff, hittaEnhet, SENASTE_MANAD, SCB_HAMTAT, varde } from '../lib/engine/index';
+import { formatMoney, formatNumber, displayDate } from '../lib/format';
+import { breadcrumbSchema, webPageSchema, faqSchema } from '../lib/seo';
+import { CONTACT_EMAIL } from '../data/site-config';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const sv = lang === 'sv';
+const kr = (n: number) => formatMoney(n, 0, lang);
+const n = (x: number, d = 1) => formatNumber(x, d, lang);
+const title = sv ? 'Metod 2026: så räknar Elpriskollen totalpriset på el' : 'Method 2026: how Elpriskollen works out the all-in power price';
+const description = sv ? 'Metod 2026: formeln för totalpris per kWh, varifrån energiskatt, nätavgifter och SCB-statistik kommer, vilka tester som körs och vad som inte ingår i beräkningen.' : 'Method 2026: the formula for the all-in price per kWh, where energy tax, grid fees and Statistics Sweden data come from, which tests run and what is left out.';
+const h1 = sv ? 'Metod och källor' : 'Method and sources';
+const path = route('method', lang);
+const umea = hittaEnhet('Umeå Energi')!;
+const tU = natTariff(umea, 'V16')!;
+const ex = totalpris({ spot: 80, paslag: 5, natOverforing: tU.rorligOre, energiskatt: P.skatt.energiskatt_ore, momsSats: P.skatt.moms });
+const antal = rangordna('L16').length;
+const scbEx = varde('rorligt', 'SE3', '2', '2026M08');
+const sources = Object.values(P.sources);
+const faqs = sv ? [
+  { q: 'Varför skiljer sig ert totalpris från min faktura?', a: 'Oftast av tre skäl: ditt spotpris är ett annat än det du skrev in, din elhandlare tar en månadsavgift eller andra tillägg som du inte lagt in i påslaget, eller ditt nätföretag har effektavgift eller har ändrat priset efter den 1 januari. Jämför rad för rad med fakturan; skriv till oss om nätpriset inte stämmer.' },
+  { q: 'Hur ofta uppdateras nätavgifterna?', a: `Energimarknadsinspektionen publicerar nätföretagens priser en gång om året, per den 1 januari. Vi läser in filen när den kommer och kontrollerar den mot nätföretagens egna prislistor när någon rapporterar en ändring. Myndighetsavgifterna för ${P.year} sätts till ${kr(P.nat.myndighetsavgifter_kr['2026'])} för alla nät, eftersom en del företag rapporterade det gamla beloppet.` },
+  { q: 'Används min klistrade prislista någon annanstans?', a: 'Nej. Listan läses av ett skript i din webbläsare och försvinner när du stänger sidan. Den skickas inte till oss och sparas inte. Vi hämtar heller inga spotpriser själva, varken när sidan byggs eller när du besöker den, eftersom de inte får återpubliceras utan licens.' },
+] : [
+  { q: 'Why does your all-in price differ from my bill?', a: 'Usually for one of three reasons: your real spot price differs from the one you typed, your retailer charges a monthly fee or surcharges you did not add to the mark-up, or your grid company has a power charge or changed its price after 1 January. Compare line by line with the bill; write to us if the grid price looks wrong.' },
+  { q: 'How often are grid fees updated?', a: `The Energy Markets Inspectorate publishes grid companies’ prices once a year, as of 1 January. We load the file when it appears and check it against the companies’ own price lists when someone reports a change. Authority charges for ${P.year} are set to ${kr(P.nat.myndighetsavgifter_kr['2026'])} for every grid, since some companies reported the old amount.` },
+  { q: 'Is my pasted price list used anywhere else?', a: 'No. A script in your browser reads it and it disappears when you close the page. It is neither sent to us nor stored. Nor do we fetch any spot prices ourselves, at build time or while you visit, because they may not be republished without a licence.' },
+];
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: h1, description, path, lang }), breadcrumbSchema([{ name: sv ? 'Start' : 'Home', path: route('home', lang) }, { name: h1, path }]), faqSchema(faqs, lang)]} faqs={faqs} breadcrumbs={[{ label: h1 }]}>
+  <header class="mb-6"><h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{h1}</h1></header>
+  {sv ? (
+  <div class="prose prose-slate max-w-none">
+    <p>Elpriskollen räknar ut vad en kilowattimme kostar ett svenskt hushåll när allt är med: elhandelns pris, nätföretagets överföringsavgift, energiskatten och momsen, och sedan de fasta avgifterna per månad. Alla skattesatser och gränser står i en parameterfil daterad <time datetime={P.retrieved_at}>{displayDate(P.retrieved_at, 'sv-SE')}</time>, med källa för varje block. Nätpriserna kommer från Energimarknadsinspektionens sammanställning för {antal} nätområden och statistiken över elavtal från SCB (hämtad {displayDate(SCB_HAMTAT, 'sv-SE')}). Ingen siffra skrivs in för hand i texterna: de räknas fram ur samma filer som kalkylatorerna använder.</p>
+    <h2>Formeln</h2>
+    <p>Totalpris per kWh = (spotpris + påslag + överföringsavgift + energiskatt) × (1 + {n(P.skatt.moms * 100, 0)} %). Alla delar anges exklusive moms; momsen läggs på summan, även på skatten, precis som på fakturan. Ett negativt spotpris sänker totalen men skatten ligger kvar.</p>
+    <p>Exempel: spotpris 80 öre, påslag 5 öre, Umeå Energis överföringsavgift {n(tU.rorligOre)} öre för en villa med 16 ampere, energiskatt {n(P.skatt.energiskatt_ore)} öre. Summan exklusive moms är {n(ex.total / 1.25)} öre, momsen {n(ex.moms)} öre, totalt {n(ex.total)} öre per kWh.</p>
+    <h2>Energiskatt och moms</h2>
+    <p>Energiskatten är {n(P.skatt.energiskatt_ore)} öre per kWh exklusive moms från den 1 januari {P.year} enligt 11 kap. 3 § lagen (1994:1776) om skatt på energi. I de kommuner som räknas upp i 11 kap. 4 § gör nätföretaget ett avdrag på {n(P.skatt.norrlandsavdrag_ore)} öre, så hushållen betalar {n(P.skatt.energiskatt_sankt_ore)} öre. Lagen räknar om beloppet efter prisutvecklingen från 2027; en promemoria från mars 2026 föreslår att det i stället ligger kvar på 36,0 öre. Det var inte beslutat när sidan uppdaterades, och vi ändrar värdet först när beslutet är fattat. Momsen är 25 procent enligt Skatteverket.</p>
+    <h2>Nätavgifter</h2>
+    <p>Energimarknadsinspektionen (Ei) samlar varje år in nätföretagens avgifter för typkunder: lägenhet med 16 ampere och 2 000 kWh, villa med 16 ampere och 5 000 kWh, villa med 20 ampere och 10 000 eller 20 000 kWh och villa med 25 ampere. För varje typfall finns fast avgift, myndighetsavgifter, rörligt pris och totalkostnad exklusive moms. Vi räknar fram ett snittpris per kWh som (total − fasta delar) ÷ förbrukning, vilket viktar in höglast och låglast när nätet har två priser. Där Ei inte redovisar något pris, ofta för att nätet har effektavgift för villor, visar vi inget i stället för att gissa. Ei:s öppna data får återanvändas fritt enligt myndighetens villkor.</p>
+    <h2>SCB:s elprisstatistik</h2>
+    <p>Förifyllt spotpris och historiken kommer från SCB:s statistik Elpriser och elavtal: elhandelspriset per månad efter avtalstyp, elområde och typ av bostad, exklusive energiskatt, moms och nät, med påslaget inräknat. Exempel: rörligt avtal för villa utan elvärme i SE3 i augusti 2026 var {scbEx !== null ? n(scbEx) : '–'} öre. SCB publicerar under licensen CC0. Senaste månad i filen: {SENASTE_MANAD}.</p>
+    <h2>Spotpriser</h2>
+    <p>Vi visar inga spotpriser. Day-ahead-priserna ägs av elbörsen; ENTSO-E:s lista över data som får återanvändas fritt omfattar dem inte, och börsen säljer licenser för att visa dem. Du skriver in eller klistrar in ditt eget pris. Kalkylatorn läser listan i webbläsaren, känner igen öre, kronor och euro per megawattimme och räknar varje kvart för sig.</p>
+    <h2>Tester</h2>
+    <ul>
+      <li>Ei:s typfall räknas om och jämförs med myndighetens totalbelopp, till exempel Umeå Energi: {kr(tU.totalKrPerAr)} om året exklusive moms för villa 16 A med {kr(P.nat.myndighetsavgifter_kr['2026'])} i myndighetsavgifter.</li>
+      <li>SCB-värden kontrolleras mot publicerade siffror, och elskatten i SCB:s halvårsstatistik måste vara lika med parametern.</li>
+      <li>Lägsta, högsta och snitt räknas ur samma lista och testas så att lägsta aldrig är större än högsta.</li>
+      <li>Varje mini-kalkylator körs med standardvärden och med tomma och maximala fält, utan att ge NaN.</li>
+    </ul>
+    <h2>Begränsningar</h2>
+    <p>Effektavgifter ingår bara där de finns i Ei:s typfall. Elhandlarens månadsavgift, elcertifikat och ursprungsgarantier lägger du själv till. Nätföretag kan ändra pris under året. Elstöd betalas i efterhand och påverkar inte priset per kWh. Hittar du ett fel: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>Alla källor</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener noreferrer" target="_blank">{s.label.sv}</a></li>)}</ul>
+  </div>
+  ) : (
+  <div class="prose prose-slate max-w-none">
+    <p>Elpriskollen works out what a kilowatt-hour costs a Swedish household once everything is in: the retail energy price, the grid company’s transfer fee, energy tax and VAT, plus the fixed monthly fees. Every tax rate and threshold sits in a parameter file dated <time datetime={P.retrieved_at}>{displayDate(P.retrieved_at, 'en-GB')}</time>, with a source for each block. Grid prices come from the Energy Markets Inspectorate’s (Ei) compilation for {antal} grid areas and contract statistics from Statistics Sweden (retrieved {displayDate(SCB_HAMTAT, 'en-GB')}). No figure is typed by hand into the texts: they are computed from the same files the calculators use.</p>
+    <h2>The formula</h2>
+    <p>All-in price per kWh = (spot price + mark-up + transfer fee + energy tax) × (1 + {n(P.skatt.moms * 100, 0)}%). Every part is entered before VAT; VAT goes on the sum, tax included, exactly as on the bill. A negative spot price lowers the total but the tax stays.</p>
+    <p>Example: spot 80 öre, mark-up 5 öre, Umeå Energi’s transfer fee of {n(tU.rorligOre)} öre for a 16 A house, energy tax {n(P.skatt.energiskatt_ore)} öre. The sum before VAT is {n(ex.total / 1.25)} öre, VAT {n(ex.moms)} öre, total {n(ex.total)} öre per kWh.</p>
+    <h2>Energy tax and VAT</h2>
+    <p>Energy tax is {n(P.skatt.energiskatt_ore)} öre per kWh before VAT from 1 January {P.year} under chapter 11, section 3 of the Energy Tax Act (1994:1776). In the municipalities listed in section 4, the grid company deducts {n(P.skatt.norrlandsavdrag_ore)} öre, so households pay {n(P.skatt.energiskatt_sankt_ore)} öre. The Act indexes the amount to prices from 2027; a March 2026 government memorandum proposes keeping it at 36.0 öre instead. That had not been decided when this page was updated, and we change the value only once a decision is made. VAT is 25% according to the Swedish Tax Agency.</p>
+    <h2>Grid fees</h2>
+    <p>Every year Ei collects grid companies’ charges for standard customers: a 16 A flat using 2,000 kWh, a 16 A house using 5,000 kWh, a 20 A house using 10,000 or 20,000 kWh and a 25 A house. For each case there is a fixed fee, authority charges, a variable price and an annual total before VAT. We derive an average price per kWh as (total − fixed parts) ÷ consumption, which weights peak and off-peak rates when a grid has two prices. Where Ei shows no price, often because the grid uses a power charge for houses, we show nothing rather than guess. Ei’s open data may be reused freely under the authority’s terms.</p>
+    <h2>Statistics Sweden price data</h2>
+    <p>The pre-filled spot price and the history come from Statistics Sweden’s Electricity prices and contracts: the monthly retail price by contract type, bidding zone and type of home, before energy tax, VAT and grid fee, mark-up included. Example: a variable contract for a house without electric heating in SE3 in August 2026 was {scbEx !== null ? n(scbEx) : '–'} öre. Statistics Sweden publishes under CC0. Latest month in the file: {SENASTE_MANAD}.</p>
+    <h2>Spot prices</h2>
+    <p>We show no spot prices. Day-ahead prices belong to the power exchange; ENTSO-E’s list of data free for re-use does not include them, and the exchange sells display licences. You type or paste your own price. The calculator reads the list in your browser, recognises öre, kronor and euros per megawatt-hour and handles each quarter hour separately.</p>
+    <h2>Tests</h2>
+    <ul>
+      <li>Ei’s standard cases are recomputed and checked against the regulator’s totals, for example Umeå Energi: {kr(tU.totalKrPerAr)} a year before VAT for a 16 A house with {kr(P.nat.myndighetsavgifter_kr['2026'])} of authority charges.</li>
+      <li>Statistics Sweden values are checked against published figures, and the energy tax in its half-year household statistics must equal the parameter.</li>
+      <li>Lowest, highest and average come from the same list and are tested so that the lowest can never exceed the highest.</li>
+      <li>Every mini-calculator is run with defaults and with empty and maximum fields, and must never return NaN.</li>
+    </ul>
+    <h2>Limits</h2>
+    <p>Power charges are included only where they appear in Ei’s standard cases. You add the retailer’s monthly fee, electricity certificates and guarantees of origin yourself. Grid companies may change prices during the year. Electricity support is paid afterwards and does not change the price per kWh. Found an error? <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>All sources</h2>
+    <ul>{sources.map((s) => <li><a href={s.url} rel="nofollow noopener noreferrer" target="_blank">{s.label.en}</a></li>)}</ul>
+  </div>
+  )}
+</PageLayout>

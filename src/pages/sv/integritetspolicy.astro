@@ -1,0 +1,24 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'sv';
+---
+<PageLayout title={`Integritetspolicy – ${SITE_NAMES[lang]}`} description="Elpriskollen räknar i din webbläsare: spotpris, förbrukning och klistrade prislistor skickas inte till oss. Så hanteras uppgifter enligt dataskyddsförordningen." lang={lang} noindex={true} breadcrumbs={[{ label: 'Integritetspolicy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Integritetspolicy</h1>
+    <h2>Personuppgiftsansvarig</h2>
+    <LegalIdentity lang={lang} />
+    <h2>Det du skriver in</h2>
+    <p>Spotpris, påslag, förbrukning, nätområde och de prislistor du klistrar in behandlas bara i din webbläsare. Inget skickas till oss eller till någon annan, och webbplatsen hämtar inga elpriser från tredje part medan du räknar. Om du använder delningslänken står dina värden i adressen; den du skickar länken till ser dem.</p>
+    <h2>Teknisk loggning hos webbvärden</h2>
+    <p>Webbvärden kan, som alla webbservrar, tillfälligt registrera IP-adress och tidpunkt för att leverera sidorna och skydda mot missbruk. Vi har ingen tillgång till dessa loggar för att identifiera besökare. Värd: se <a href={route('terms', lang)}>villkor och utgivare</a>.</p>
+    <h2>E-post</h2>
+    <p>Skriver du till <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> används adressen bara för att svara och raderas när ärendet är klart, senast efter tolv månader. Rättslig grund: berättigat intresse att besvara frågan (artikel 6.1 f i dataskyddsförordningen).</p>
+    <h2>Dina rättigheter</h2>
+    <p>Du har rätt till tillgång, rättelse, radering och invändning. Kontakta oss på adressen ovan. Du kan också klaga hos Integritetsskyddsmyndigheten (IMY) i Sverige eller hos {LEGAL.supervisoryAuthority}, där utgivaren är etablerad.</p>
+    <p>Uppdaterad {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,28 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'en';
+---
+<PageLayout title={`Legal notice – ${SITE_NAMES[lang]}`} description="Publisher, host, liability, copyright and governing law for Elpriskollen, which works out the all-in electricity price in Sweden with energy tax, VAT and grid fee." lang={lang} noindex={true} breadcrumbs={[{ label: 'Legal notice' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Legal notice</h1>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Responsible for the content of {SITE_URL}: {AUTHOR_NAME}.</p>
+    <h2>Host</h2>
+    <LegalIdentity mode="hosting" lang={lang} />
+    <h2>What the site does</h2>
+    <p>Elpriskollen turns an electricity price you enter into what you pay per kilowatt-hour in Sweden: retailer mark-up, the grid company’s transfer fee from the Swedish Energy Markets Inspectorate’s (Ei) compilation, energy tax set by the Swedish Tax Agency, and VAT. It also shows Statistics Sweden figures on what contracts have cost. Results are <strong>estimates</strong>; your bills from the retailer and the grid company are what count. The site is independent, sells no contracts and has no link to any energy company, grid operator, power exchange or authority. Method and limits: <a href={route('method', lang)}>method and sources</a>.</p>
+    <h2>Liability</h2>
+    <p>Tax rates and tariffs are checked against their sources and the engine is tested automatically, but grid companies may change prices during the year and we cannot guarantee the absence of errors. The publisher is not liable for decisions based solely on an estimate. Report errors through the <a href={route('contact', lang)}>contact page</a>.</p>
+    <h2>Copyright and data</h2>
+    <p>Texts, graphics and code belong to the publisher. Statistics Sweden data is reused under CC0, Ei open data under the authority’s free-reuse terms, and legal texts under the Swedish principle of public access. Power-exchange spot prices are not republished.</p>
+    <h2>Embedding</h2><p>The calculator may be embedded free of charge with a visible link: see <a href={route('widget', lang)}>Embed the calculator</a>.</p>
+    <h2>Personal data and cookies</h2><p>What you type, including a pasted price list, stays in your browser. See the <a href={route('privacy', lang)}>privacy policy</a> and the <a href={route('cookies', lang)}>cookies</a> page.</p>
+    <h2>Reporting content</h2><p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, with the page address and the reason.</p>
+    <h2>Governing law</h2><p>French law, where the publisher is established. Disputes are first settled amicably, otherwise by the competent court in {LEGAL.jurisdiction}; a consumer keeps the protection of the law of their home country. Updated {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>

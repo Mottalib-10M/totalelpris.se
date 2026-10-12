@@ -1,0 +1,17 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy – ${SITE_NAMES[lang]}`} description="How Elpriskollen checks tax rates and grid fees: official sources only, a date for every value, automatic tests and open corrections on every page." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial policy</h1>
+    <h2>Sources</h2><p>We use primary sources only: the Energy Tax Act (1994:1776) and the Swedish Tax Agency for energy tax, the Swedish Energy Markets Inspectorate (Ei) for grid fees, Statistics Sweden for contract statistics, Svenska kraftnät for bidding zones, and the Swedish Energy Agency and Energimarknadsbyrån for consumption figures. A blog, a comparison site or an energy company’s campaign page is never a source. Each value sits in the parameter file with its source and date ({P.retrieved_at}).</p>
+    <h2>What we do not publish</h2><p>A value we could not read in an official source is not published. Power-exchange spot prices are not reproduced, because they may not be republished without a licence; you enter your own price. We rank no retailers and take no money to mention anyone.</p>
+    <h2>Checks</h2><p>The calculation engine is tested automatically on every build against known values, including Ei’s standard cases and Statistics Sweden’s published monthly prices. Tax rates and tariffs are reviewed at each new year and whenever a change is announced, such as the 2027 energy tax.</p>
+    <h2>Corrections</h2><p>Errors are fixed as soon as confirmed and the page date changes. Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. More in <a href={route('method', lang)}>method and sources</a> and <a href={route('about', lang)}>about us</a>.</p>
+  </div>
+</PageLayout>

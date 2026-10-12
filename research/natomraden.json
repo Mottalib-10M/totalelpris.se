@@ -1,0 +1,1673 @@
+{
+"source": "Nätområden.se (Svenska kraftnät), relevé du 2026-10-13",
+"omraden": [
+{
+"kod": "ABB",
+"namn": "Älvsbybygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "AHB",
+"namn": "Ängelholmsbygden",
+"bolag": "Öresundskraft AB",
+"elomrade": "SE4"
+},
+{
+"kod": "AJB",
+"namn": "Arvidsjaurbygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "AKB",
+"namn": "Åkersberga",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ALL",
+"namn": "Ådalen Lokal",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "ALM",
+"namn": "Ålem",
+"bolag": "Ålem Energi AB",
+"elomrade": "SE4"
+},
+{
+"kod": "ALS",
+"namn": "Alingsås",
+"bolag": "Alingsås Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ALV",
+"namn": "Alvesta Köping",
+"bolag": "Alvesta Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "AML",
+"namn": "Åmål",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "AMS",
+"namn": "Almnäs",
+"bolag": "Almnäs Bruk AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ANE",
+"namn": "Ånge",
+"bolag": "Härjeåns Nät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "ANG",
+"namn": "Årjäng",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ARD",
+"namn": "Ardala",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ARN",
+"namn": "Stockholm-Arlanda",
+"bolag": "Swedavia AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ARS",
+"namn": "Årsunda",
+"bolag": "Årsunda Kraft o Belysningsf",
+"elomrade": "SE3"
+},
+{
+"kod": "ARV",
+"namn": "Arvika",
+"bolag": "Arvika Teknik AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ASL",
+"namn": "Åsele",
+"bolag": "Åsele Elnät AB ",
+"elomrade": "SE2"
+},
+{
+"kod": "AVD",
+"namn": "Älvdalen",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "AVE",
+"namn": "Avesta",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "BDL",
+"namn": "Brittedal",
+"bolag": "Brittedals Elnät ek för",
+"elomrade": "SE4"
+},
+{
+"kod": "BDN",
+"namn": "Boden",
+"bolag": "Bodens Energi Nät AB",
+"elomrade": "SE1"
+},
+{
+"kod": "BEF",
+"namn": "Bengtsfors",
+"bolag": "Bengtsfors Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "BGO",
+"namn": "Bergslagen Östra",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "BHM",
+"namn": "Borgholm",
+"bolag": "Borgholm Energi Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "BJK",
+"namn": "Björnekulla",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "BJL",
+"namn": "Björklinge",
+"bolag": "Upplands Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "BJR",
+"namn": "Bjäre",
+"bolag": "Bjäre Kraft ek för",
+"elomrade": "SE4"
+},
+{
+"kod": "BKE",
+"namn": "Bjärke",
+"bolag": "Bjärke Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "BLE",
+"namn": "Blekinge",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "BMA",
+"namn": "Bromölla",
+"bolag": "Bromölla Energi och Vatten AB ",
+"elomrade": "SE4"
+},
+{
+"kod": "BOO",
+"namn": "Boo",
+"bolag": "Boo Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "BRG",
+"namn": "Berg",
+"bolag": "Bergs Tingslags Elektriska AB",
+"elomrade": "SE2"
+},
+{
+"kod": "BRL",
+"namn": "Borlänge",
+"bolag": "Borlänge Energi Elnät, AB",
+"elomrade": "SE3"
+},
+{
+"kod": "BRS",
+"namn": "Borås",
+"bolag": "Borås Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "BYG",
+"namn": "Bygdeå-Robertsfors",
+"bolag": "Skellefteå Kraft Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "CBR",
+"namn": "Carlfors Bruk",
+"bolag": "Carlfors Bruk KB",
+"elomrade": "SE3"
+},
+{
+"kod": "DAD",
+"namn": "Dalsland med omnejd",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "DAN",
+"namn": "Danderyd",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "DAP",
+"namn": "Dalstorp",
+"bolag": "Östra Kinds Elkraft ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "DFS",
+"namn": "Degerfors",
+"bolag": "Degerfors Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "DOF",
+"namn": "Domsjö Fabriksområde",
+"bolag": "Övik Energi Nät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "DRV",
+"namn": "Drefviken",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "EBA",
+"namn": "Emmaboda",
+"bolag": "Emmaboda Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "EBN",
+"namn": "Edsbyn",
+"bolag": "Ellevio AB",
+"elomrade": "SE2"
+},
+{
+"kod": "EKG",
+"namn": "Enköping",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "EKO",
+"namn": "Ekeröarna",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ESJ",
+"namn": "Eksjö",
+"bolag": "Eksjö Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ESK",
+"namn": "Eskilstuna",
+"bolag": "Eskilstuna Energi & Miljö Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FBG",
+"namn": "Falkenberg",
+"bolag": "Falkenberg Energi AB",
+"elomrade": "SE4"
+},
+{
+"kod": "FBN",
+"namn": "Falbygden",
+"bolag": "Falbygdens Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FGA",
+"namn": "Fagersta",
+"bolag": "Västerbergslagens Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FLE",
+"namn": "Flen",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FLN",
+"namn": "Falun",
+"bolag": "Falu Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FLO",
+"namn": "Falun nordost",
+"bolag": "Falu Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FMD",
+"namn": "Främmestad",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FOB",
+"namn": "Forsbacka",
+"bolag": "Gävle Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FPD",
+"namn": "Filipstad",
+"bolag": "Filipstad Energinät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "FRV",
+"namn": "Frostviken region",
+"bolag": "Blåsjön Nät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "FSB",
+"namn": "Finspångsbygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GAB",
+"namn": "Garpenberg",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GAM",
+"namn": "Gammelstilla",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GBG",
+"namn": "Göteborg",
+"bolag": "Göteborg Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GBN",
+"namn": "Gullspångsbygden",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GDB",
+"namn": "Gideobygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "GIV",
+"namn": "Gislaved",
+"bolag": "Gislaved Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GNF",
+"namn": "Gagnef",
+"bolag": "Dala Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GTA",
+"namn": "Göta",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GTL",
+"namn": "Gotland",
+"bolag": "Gotlands Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "GTP",
+"namn": "Grästorp",
+"bolag": "Grästorp Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "GVL",
+"namn": "Gävle",
+"bolag": "Gävle Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HAL",
+"namn": "Hälsingland",
+"bolag": "Ellevio AB",
+"elomrade": "SE2"
+},
+{
+"kod": "HAM",
+"namn": "Hammarstrand",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "HBG",
+"namn": "Helsingborg",
+"bolag": "Öresundskraft AB",
+"elomrade": "SE4"
+},
+{
+"kod": "HBO",
+"namn": "Habo",
+"bolag": "Habo Kraft AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HBY",
+"namn": "Heby",
+"bolag": "Sala-Heby Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HDG",
+"namn": "Huddinge",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HDL",
+"namn": "Horndal",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HDS",
+"namn": "Hedesunda",
+"bolag": "Gävle Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HDV",
+"namn": "Hudiksvall",
+"bolag": "Ellevio AB",
+"elomrade": "SE2"
+},
+{
+"kod": "HJM",
+"namn": "Hjärtum",
+"bolag": "Hjärtums Elförening ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "HJN",
+"namn": "Härjeån",
+"bolag": "Härjeåns Nät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "HJO",
+"namn": "Hjo",
+"bolag": "Hjo Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HLB",
+"namn": "Hallabro",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "HLD",
+"namn": "Halland",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "HLJ",
+"namn": "Herrljunga",
+"bolag": "Herrljunga Elektriska AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HMD",
+"namn": "Halmstad",
+"bolag": "Halmstads Energi och Miljö Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "HMH",
+"namn": "Hedemorahyttorna",
+"bolag": "Hedemora Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HMM",
+"namn": "Hammarö",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HMR",
+"namn": "Hamra",
+"bolag": "Ellevio AB",
+"elomrade": "SE2"
+},
+{
+"kod": "HOF",
+"namn": "Hofors",
+"bolag": "Gävle Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HOG",
+"namn": "Höganäs",
+"bolag": "Höganäs Energi AB",
+"elomrade": "SE4"
+},
+{
+"kod": "HOR",
+"namn": "Höör",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "HRA",
+"namn": "Härryda",
+"bolag": "Härryda Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HSD",
+"namn": "Härnösand",
+"bolag": "Härnösand Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "HUV",
+"namn": "Huvudsta",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "HVI",
+"namn": "Hallstavik",
+"bolag": "Hallstaviks Elverk ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "ING",
+"namn": "Ingarö",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "JML",
+"namn": "Jämtlandsbygden",
+"bolag": "Jämtkraft Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "JNK",
+"namn": "Jönköping",
+"bolag": "Jönköping Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "JRA",
+"namn": "Järla",
+"bolag": "Nacka Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "JUJ",
+"namn": "Jukkasjärvi",
+"bolag": "Jukkasjärvi Sockens Belysningsf",
+"elomrade": "SE1"
+},
+{
+"kod": "KAB",
+"namn": "Kalixbygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "KBA",
+"namn": "Kungsbacka",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KBG",
+"namn": "Karlsborg",
+"bolag": "Karlsborgs Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KHB",
+"namn": "Katrineholmsbygden",
+"bolag": "Tekniska Verken Katrineholm Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KHN",
+"namn": "Karlshamn",
+"bolag": "Karlshamn Energi AB",
+"elomrade": "SE4"
+},
+{
+"kod": "KKA",
+"namn": "Karlskrona",
+"bolag": "Affärsverken Elnät i Karlskrona AB",
+"elomrade": "SE4"
+},
+{
+"kod": "KKB",
+"namn": "Kinnekullebygden",
+"bolag": "Götene Elförening ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "KLK",
+"namn": "Kiruna LKAB",
+"bolag": "LKAB Nät AB",
+"elomrade": "SE1"
+},
+{
+"kod": "KMR",
+"namn": "Kalmar",
+"bolag": "Kalmar Energi Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "KND",
+"namn": "Kind",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KOB",
+"namn": "Kopparbergsbyggden",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KPN",
+"namn": "Klippan",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "KRF",
+"namn": "Kramfors",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "KRH",
+"namn": "Kristinehamn",
+"bolag": "Kristinehamns Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KRS",
+"namn": "Kristianstad-Åhus",
+"bolag": "C4 Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "KSA",
+"namn": "Karlskoga",
+"bolag": "Karlskoga Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KST",
+"namn": "Karlstad",
+"bolag": "Karlstad Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KUV",
+"namn": "Kungälv",
+"bolag": "Kungälv Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "KVI",
+"namn": "Kviinge",
+"bolag": "Brittedals Elnät ek för",
+"elomrade": "SE4"
+},
+{
+"kod": "KVM",
+"namn": "Kvänum",
+"bolag": "Kvänumbygdens Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "LAO",
+"namn": "Luleälven Övre",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "LBY",
+"namn": "Ljungby",
+"bolag": "Ljungby Energinät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "LDB",
+"namn": "Lindesberg",
+"bolag": "Linde Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "LDG",
+"namn": "Lidingö",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "LDK",
+"namn": "Lidköping",
+"bolag": "Lidköping Elnät",
+"elomrade": "SE3"
+},
+{
+"kod": "LED",
+"namn": "Lilla Edet-Ale",
+"bolag": "Ale Elförening ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "LER",
+"namn": "Leksand-Rättvik",
+"bolag": "Dala Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "LHM",
+"namn": "Laholm",
+"bolag": "Södra Hallands Kraft ek för",
+"elomrade": "SE4"
+},
+{
+"kod": "LJD",
+"namn": "Ljusdal",
+"bolag": "Ljusdal Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "LKA",
+"namn": "Landskrona",
+"bolag": "Landskrona Energi AB",
+"elomrade": "SE4"
+},
+{
+"kod": "LMA",
+"namn": "Lomma",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "LNK",
+"namn": "Linköping",
+"bolag": "Tekniska Verken i Linköping Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "LRM",
+"namn": "Lerum",
+"bolag": "Lerum Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "LUL",
+"namn": "Luleå",
+"bolag": "Luleå Energi Elnät AB",
+"elomrade": "SE1"
+},
+{
+"kod": "LUN",
+"namn": "Lund",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "LYS",
+"namn": "Lysekil",
+"bolag": "LEVA i Lysekil AB",
+"elomrade": "SE3"
+},
+{
+"kod": "LYX",
+"namn": "Lyckselebygden",
+"bolag": "Skellefteå Kraft Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "MAF",
+"namn": "Malmfälten",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "MAI",
+"namn": "Mariestad",
+"bolag": "VänerEnergi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "MBT",
+"namn": "Malmberget LKAB",
+"bolag": "LKAB Nät AB",
+"elomrade": "SE1"
+},
+{
+"kod": "MBY",
+"namn": "Mjölby",
+"bolag": "Mjölby Kraftnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "MDL",
+"namn": "Mölndal",
+"bolag": "Mölndal Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "MEL",
+"namn": "Medelpad Lokal",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "MLG",
+"namn": "Malung",
+"bolag": "Malungs Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "MMO",
+"namn": "Malmö-Burlöv",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "MOR",
+"namn": "Mora-Orsa",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "MRP",
+"namn": "Mörarp",
+"bolag": "Öresundskraft AB",
+"elomrade": "SE4"
+},
+{
+"kod": "MSD",
+"namn": "Marstrand",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "MYN",
+"namn": "Myråsen",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NBL",
+"namn": "Bohuslän Norra",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NBR",
+"namn": "Nybro",
+"bolag": "Nybro Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "NHA",
+"namn": "Halland Norra",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NHN",
+"namn": "Nynäshamn",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NKL",
+"namn": "Närkes Kil",
+"bolag": "Linde Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NOB",
+"namn": "Norberg",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NRL",
+"namn": "Nerike Lokal",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NSB",
+"namn": "Nossebro",
+"bolag": "Nossebroortens Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "NSF",
+"namn": "Nissafors",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NSO",
+"namn": "Nässjö",
+"bolag": "Nässjö Affärsverk Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NTE",
+"namn": "Norrtälje",
+"bolag": "Norrtälje Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NVS",
+"namn": "Nordvästra Skåne",
+"bolag": "Öresundskraft AB",
+"elomrade": "SE4"
+},
+{
+"kod": "NYD",
+"namn": "Nyköping Landsbygd",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "NYK",
+"namn": "Nyköping",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "OBO",
+"namn": "Ockelbo",
+"bolag": "Ellevio AB",
+"elomrade": "SE2"
+},
+{
+"kod": "OCK",
+"namn": "Öckerö",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "OFB",
+"namn": "Österfärnebo",
+"bolag": "Sandviken Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "OGO",
+"namn": "Östra Götaland",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "OHM",
+"namn": "Östhammar",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "OHN",
+"namn": "Oskarshamn tätort",
+"bolag": "Oskarshamn Energi Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "OLD",
+"namn": "Öland",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "OLN",
+"namn": "Österlen",
+"bolag": "Österlens Kraft AB",
+"elomrade": "SE4"
+},
+{
+"kod": "OLS",
+"namn": "Olofström",
+"bolag": "Olofströms Kraft Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "ORT",
+"namn": "Orust-Tjörn",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "ORV",
+"namn": "Orust Västra",
+"bolag": "Västra Orusts Energitjänst ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "OSD",
+"namn": "Olseröd",
+"bolag": "Olseröds Elektr Distributionsf",
+"elomrade": "SE4"
+},
+{
+"kod": "OVK",
+"namn": "Örnsköldsvik",
+"bolag": "Övik Energi Nät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "OXD",
+"namn": "Oxelösund",
+"bolag": "Oxelö Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "PIB",
+"namn": "Pitebygden",
+"bolag": "Pite Energi, AB",
+"elomrade": "SE1"
+},
+{
+"kod": "PTE",
+"namn": "Partille",
+"bolag": "Partille Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "RBY",
+"namn": "Ronneby",
+"bolag": "Ronneby Miljö o Teknik AB",
+"elomrade": "SE4"
+},
+{
+"kod": "ROY",
+"namn": "Rödeby",
+"bolag": "Rödeby Elverk ek för",
+"elomrade": "SE4"
+},
+{
+"kod": "RSJ",
+"namn": "Ringsjö",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "RSK",
+"namn": "Roslagskusten",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SAH",
+"namn": "Sala-Hyttan",
+"bolag": "Sala-Heby Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SBG",
+"namn": "Sölvesborg",
+"bolag": "Sölvesborgs Energi och Vatten AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SBK",
+"namn": "Sysslebäck",
+"bolag": "Näckåns Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SBR",
+"namn": "Skyllbergs Bruk",
+"bolag": "Skyllbergs Bruks AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SBV",
+"namn": "Svalboviken",
+"bolag": "Eskilstuna Energi & Miljö Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SDT",
+"namn": "Södertälje",
+"bolag": "Telge Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SDV",
+"namn": "Sandviken",
+"bolag": "Sandviken Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SFE",
+"namn": "Säffle",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SFP",
+"namn": "Staffanstorp",
+"bolag": "Staffanstorps Energi AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SGD",
+"namn": "Stenungsund",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SGS",
+"namn": "Strängnäs Tätort",
+"bolag": "SEVAB Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SHD",
+"namn": "Sjuhärad",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SHN",
+"namn": "Söderhamn",
+"bolag": "Söderhamn Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "SHT",
+"namn": "Sandhult-Sandared",
+"bolag": "Sandhult-Sandareds Elektr ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "SIG",
+"namn": "Sigtuna",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SIH",
+"namn": "Simrishamn",
+"bolag": "Österlens Kraft AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SJB",
+"namn": "Sjöbo",
+"bolag": "Sjöbo Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SJO",
+"namn": "Sjogerstad",
+"bolag": "Sjogerstads Elektr Distributionsf",
+"elomrade": "SE3"
+},
+{
+"kod": "SKA",
+"namn": "Skara",
+"bolag": "Skara Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SKD",
+"namn": "Skövde",
+"bolag": "Skövde Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SKL",
+"namn": "Skåne Landsbygd",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SKN",
+"namn": "Skånska",
+"bolag": "Skånska Energi Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SKP",
+"namn": "Skurup",
+"bolag": "Skurups Elverk",
+"elomrade": "SE4"
+},
+{
+"kod": "SKR",
+"namn": "Skillingaryd",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SKT",
+"namn": "Skellefteå",
+"bolag": "Skellefteå Kraft Elnät AB",
+"elomrade": "SE1"
+},
+{
+"kod": "SKV",
+"namn": "Skåne Västra Lokalnät",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SLD",
+"namn": "Skövde Landsbygd",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SMB",
+"namn": "Smedjebacken",
+"bolag": "Smedjebacken Energi Nät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SMN",
+"namn": "Småland Norra lokalnät",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SMS",
+"namn": "Småland Södra",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE4"
+},
+{
+"kod": "SNM",
+"namn": "Skåne Mellersta",
+"bolag": "Mellersta Skånes Kraft ek för",
+"elomrade": "SE4"
+},
+{
+"kod": "SOT",
+"namn": "Sollentuna",
+"bolag": "Sollentuna Energi och Miljö AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SRF",
+"namn": "Sturefors",
+"bolag": "Sturefors Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SSJ",
+"namn": "Sävsjö",
+"bolag": "Njudung Energi Sävsjö AB ",
+"elomrade": "SE3"
+},
+{
+"kod": "STH",
+"namn": "Stockholm",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "STR",
+"namn": "Säter",
+"bolag": "Dala Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "SUV",
+"namn": "Sundsvall tätort",
+"bolag": "Sundsvall Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "SYM",
+"namn": "Sydmälaren",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TBA",
+"namn": "Töreboda",
+"bolag": "VänerEnergi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TBG",
+"namn": "Trelleborg",
+"bolag": "Trelleborg Energi Kommunal Teknik",
+"elomrade": "SE4"
+},
+{
+"kod": "TBY",
+"namn": "Täby",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TDN",
+"namn": "Tornedalen",
+"bolag": "Övertorneå Energi AB",
+"elomrade": "SE1"
+},
+{
+"kod": "TDO",
+"namn": "Tornedalen Övre",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "THM",
+"namn": "Tidaholm",
+"bolag": "Tidaholm Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TIB",
+"namn": "Tibro",
+"bolag": "Tibro Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TLB",
+"namn": "Tillberga",
+"bolag": "Mälarenergi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TNN",
+"namn": "Tornedalen Nedre",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE1"
+},
+{
+"kod": "TNS",
+"namn": "Tranås",
+"bolag": "Tranås Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TOR",
+"namn": "Torsåker",
+"bolag": "Hofors Elverk AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TOS",
+"namn": "Torsås",
+"bolag": "Kraftringen Nät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "TRE",
+"namn": "Töre",
+"bolag": "Töre Energi ek för",
+"elomrade": "SE1"
+},
+{
+"kod": "TRH",
+"namn": "Trollhättan",
+"bolag": "Trollhättan Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TUM",
+"namn": "Tumba",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TYR",
+"namn": "Tyresö",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "TYS",
+"namn": "Tyngsjö-Finnmarken",
+"bolag": "Malungs Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UHN",
+"namn": "Ulricehamn",
+"bolag": "Ulricehamns Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UMA",
+"namn": "Umeå",
+"bolag": "Umeå Energi Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "UMD",
+"namn": "Umeälven Nedre",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "UMO",
+"namn": "Umeälven Övre",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "UPN",
+"namn": "Uppland Norra",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UPO",
+"namn": "Uppland Östra",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UPP",
+"namn": "Uppsala",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UPS",
+"namn": "Uppland Södra",
+"bolag": "E.ON Energidistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UPV",
+"namn": "Uppland Västra",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "URM",
+"namn": "Upprämmen",
+"bolag": "Malungs Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "UVA",
+"namn": "Uddevalla",
+"bolag": "Uddevalla Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VAB",
+"namn": "Vallebygden",
+"bolag": "Vallebygdens Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "VAD",
+"namn": "Västanhede",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VAG",
+"namn": "Vagnhärad",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VAL",
+"namn": "Värmland",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VAN",
+"namn": "Vätterbygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VAR",
+"namn": "Vara",
+"bolag": "Vara Energi ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "VAT",
+"namn": "Vallentuna",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VBG",
+"namn": "Varberg",
+"bolag": "Varberg Energi AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VBK",
+"namn": "Västerbykil",
+"bolag": "Sala-Heby Energi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VBL",
+"namn": "Västerbergslagen",
+"bolag": "Västerbergslagens Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VBN",
+"namn": "Varbergsorten Norra",
+"bolag": "Varbergsortens Elkraft ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "VBS",
+"namn": "Varbergsorten Södra",
+"bolag": "Varbergsortens Elkraft ek för",
+"elomrade": "SE3"
+},
+{
+"kod": "VBY",
+"namn": "Vimmerby",
+"bolag": "Vimmerby Energi & Miljö AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VDM",
+"namn": "Vedum",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VDN",
+"namn": "Vindeln",
+"bolag": "Skellefteå Kraft Elnät AB",
+"elomrade": "SE2"
+},
+{
+"kod": "VGD",
+"namn": "Vaggeryd",
+"bolag": "Vaggeryds Elverk",
+"elomrade": "SE3"
+},
+{
+"kod": "VGF",
+"namn": "Viggafors",
+"bolag": "Viggafors Elektriska andelsf upa",
+"elomrade": "SE3"
+},
+{
+"kod": "VIG",
+"namn": "Vingåkersbygden",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VLB",
+"namn": "Vålberg-Segerstad",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VLS",
+"namn": "Västmanland Södra",
+"bolag": "Mälarenergi Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VMA",
+"namn": "Vilhelmina",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE2"
+},
+{
+"kod": "VMD",
+"namn": "Värmdö",
+"bolag": "Vattenfall Eldistribution AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VMO",
+"namn": "Värnamo",
+"bolag": "Värnamo Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "VNB",
+"namn": "Vansbro",
+"bolag": "Ellevio AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VTL",
+"namn": "Vetlanda",
+"bolag": "Njudung Vetlanda Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VVI",
+"namn": "Västervik",
+"bolag": "Västerviks Kraft Elnät AB",
+"elomrade": "SE3"
+},
+{
+"kod": "VXO",
+"namn": "Växjö",
+"bolag": "Växjö Energi Elnät AB",
+"elomrade": "SE4"
+},
+{
+"kod": "YST",
+"namn": "Ystad",
+"bolag": "Ystad Energi AB",
+"elomrade": "SE4"
+}
+]
+}

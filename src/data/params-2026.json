@@ -1,0 +1,441 @@
+{
+ "_lisezmoi": "Tous les paramètres du site, jamais en dur dans le code (RECETTE §4). Chaque valeur a été relue sur la source citée le 2026-10-12 (voir research/faits-taxes.md). Millésime suivant : copier en params-2027.json et relire chaque valeur.",
+ "year": 2026,
+ "retrieved_at": "2026-10-12",
+ "valid_from": "2026-01-01",
+ "valid_to": "2026-12-31",
+ "skatt": {
+  "energiskatt_ore": 36.0,
+  "energiskatt_sankt_ore": 26.4,
+  "norrlandsavdrag_ore": 9.6,
+  "energiskatt_2025_ore": 43.9,
+  "moms": 0.25,
+  "historik": [
+   [
+    2020,
+    35.3
+   ],
+   [
+    2021,
+    35.6
+   ],
+   [
+    2022,
+    36.0
+   ],
+   [
+    2023,
+    39.2
+   ],
+   [
+    2024,
+    42.8
+   ],
+   [
+    2025,
+    43.9
+   ],
+   [
+    2026,
+    36.0
+   ]
+  ],
+  "sankt_kommuner": {
+   "Norrbottens län": "samtliga kommuner",
+   "Västerbottens län": "samtliga kommuner",
+   "Jämtlands län": "samtliga kommuner",
+   "Västernorrlands län": "Sollefteå, Ånge, Örnsköldsvik",
+   "Gävleborgs län": "Ljusdal",
+   "Dalarnas län": "Malung-Sälen, Mora, Orsa, Älvdalen",
+   "Värmlands län": "Torsby"
+  },
+  "forslag_2027": "Promemoria Fi2026/00776 (24 mars 2026) föreslår 36,0 öre även 2027 i stället för indexering; inte beslutat den 12 oktober 2026."
+ },
+ "nat": {
+  "myndighetsavgifter_kr": {
+   "2025": 105.45,
+   "2026": 139.89
+  },
+  "myndighetsavgifter_delar_2026": {
+   "natovervakning": 4.35,
+   "elberedskap": 120,
+   "elsakerhet": 15.54
+  },
+  "ei_median_2026_exkl_moms": {
+   "L16": 2124,
+   "V16": 4678,
+   "V20a": 7327,
+   "V20": 9301,
+   "V25": 10748
+  }
+ },
+ "elstod": {
+  "perioder": "januari och februari 2026",
+  "ore_per_kwh": {
+   "SE1": 14,
+   "SE2": 14,
+   "SE3": 26,
+   "SE4": 29
+  },
+  "tak_kwh": 10000,
+  "avtalsdag": "2026-02-28",
+  "utbetalning": "från början av juni 2026, av Försäkringskassan, utan ansökan",
+  "hogkostnadsskydd_kr_per_kwh": 1.5,
+  "hogkostnadsskydd_budget_kr": 1000000000,
+  "stod_2021_2022_andel": 0.8,
+  "stod_2022_tak_kwh": 18000
+ },
+ "marknad": {
+  "kvart_fran": "2025-10-01",
+  "auktion_kl": "12:00",
+  "elcertifikat_ore_2023": 0.2,
+  "mikroproduktion_slopad": "2026-01-01",
+  "mikroproduktion_ore": 60,
+  "mikroproduktion_max_kr": 18000
+ },
+ "forbrukning": {
+  "lagenhet_liten": 2000,
+  "lagenhet_stor": 5000,
+  "villa_utan_elvarme": 5000,
+  "villa_elvarme": 20000,
+  "hushallsel_smahus": 6700,
+  "standby_andel": 0.05,
+  "grad_sankning_andel": 0.05
+ },
+ "apparater": {
+  "tvattmaskin": {
+   "typ": "gang",
+   "namn_sv": "Tvättmaskin",
+   "namn_en": "Washing machine",
+   "kwh": 1,
+   "ggr_vecka": 4,
+   "minuter": 180,
+   "min_kwh": 0.5,
+   "max_kwh": 1,
+   "hjalp_sv": "Energimyndigheten: ecoprogrammet drar 0,5–1 kWh. Förifyllt: 1 kWh.",
+   "hjalp_en": "Swedish Energy Agency: the eco programme uses 0.5–1 kWh. Pre-filled: 1 kWh.",
+   "kalla_sv": "Energi per tvätt enligt Energimyndigheten (0,5–1 kWh för eco), övre värdet förifyllt.",
+   "kalla_en": "Energy per wash from the Swedish Energy Agency (0.5–1 kWh on eco), upper value pre-filled."
+  },
+  "torktumlare": {
+   "typ": "gang",
+   "namn_sv": "Torktumlare",
+   "namn_en": "Tumble dryer",
+   "kwh": 3,
+   "ggr_vecka": 3,
+   "minuter": 120,
+   "min_kwh": 1.5,
+   "max_kwh": 3,
+   "hjalp_sv": "Energimyndigheten: ett torkprogram drar 1,5–3 kWh. Förifyllt: 3 kWh.",
+   "hjalp_en": "Swedish Energy Agency: a drying cycle uses 1.5–3 kWh. Pre-filled: 3 kWh.",
+   "kalla_sv": "Energi per torkning enligt Energimyndigheten (1,5–3 kWh), övre värdet förifyllt.",
+   "kalla_en": "Energy per drying cycle from the Swedish Energy Agency (1.5–3 kWh), upper value pre-filled."
+  },
+  "diskmaskin": {
+   "typ": "gang",
+   "namn_sv": "Diskmaskin",
+   "namn_en": "Dishwasher",
+   "kwh": 1,
+   "ggr_vecka": 5,
+   "minuter": 180,
+   "min_kwh": 0.5,
+   "max_kwh": 1,
+   "hjalp_sv": "Energimyndigheten: ecoprogrammet drar 0,5–1 kWh per disk. Förifyllt: 1 kWh.",
+   "hjalp_en": "Swedish Energy Agency: the eco programme uses 0.5–1 kWh per load. Pre-filled: 1 kWh.",
+   "kalla_sv": "Energi per disk enligt Energimyndigheten (0,5–1 kWh för eco), övre värdet förifyllt.",
+   "kalla_en": "Energy per load from the Swedish Energy Agency (0.5–1 kWh on eco), upper value pre-filled."
+  },
+  "dusch": {
+   "typ": "gang",
+   "namn_sv": "Dusch, 5 minuter",
+   "namn_en": "Shower, 5 minutes",
+   "kwh": 1.5,
+   "ggr_vecka": 7,
+   "minuter": 15,
+   "min_kwh": 1.25,
+   "max_kwh": 1.5,
+   "hjalp_sv": "Energimyndigheten: 5 minuter med 10 liter i minuten motsvarar 1,25–1,50 kWh (elberedare).",
+   "hjalp_en": "Swedish Energy Agency: 5 minutes at 10 litres a minute is 1.25–1.50 kWh (electric water heater).",
+   "kalla_sv": "Energi per dusch enligt Energimyndigheten (1,25–1,50 kWh för 5 minuter med 10 l/min), gäller om varmvattnet värms med el.",
+   "kalla_en": "Energy per shower from the Swedish Energy Agency (1.25–1.50 kWh for 5 minutes at 10 l/min), valid if your hot water is heated electrically."
+  },
+  "frys": {
+   "typ": "ar",
+   "namn_sv": "Frys",
+   "namn_en": "Freezer",
+   "kwh": 450,
+   "ggr_vecka": 1,
+   "minuter": 60,
+   "min_kwh": 250,
+   "max_kwh": 500,
+   "hjalp_sv": "Energimyndigheten: en ny frys drar cirka 250 kWh per år, en tio år gammal 400–500 kWh. Förifyllt: 450 kWh.",
+   "hjalp_en": "Swedish Energy Agency: a new freezer uses about 250 kWh a year, a ten-year-old one 400–500 kWh. Pre-filled: 450 kWh.",
+   "kalla_sv": "Årsförbrukning enligt Energimyndigheten (ny cirka 250 kWh, tio år gammal 400–500 kWh).",
+   "kalla_en": "Yearly use from the Swedish Energy Agency (new about 250 kWh, ten years old 400–500 kWh)."
+  },
+  "bastu": {
+   "typ": "effekt",
+   "namn_sv": "Elbastu",
+   "namn_en": "Electric sauna",
+   "kwh": 6,
+   "effekt_kw": 6,
+   "ggr_vecka": 2,
+   "minuter": 60,
+   "min_kwh": 0,
+   "max_kwh": 0,
+   "hjalp_sv": "Aggregatets effekt står på typskylten. 6 kW är bara ett exempel att ändra.",
+   "hjalp_en": "The heater’s power is on its rating plate. 6 kW is only an example to change.",
+   "kalla_sv": "Energi = aggregatets effekt × tiden det är på. Termostaten slår av och på, så verklig förbrukning blir oftast lägre: värdet är ett tak.",
+   "kalla_en": "Energy = heater power × time switched on. The thermostat cycles, so real use is usually lower: treat it as a ceiling."
+  }
+ },
+ "elbil": {
+  "batteri_kwh": 60,
+  "fran_pct": 20,
+  "till_pct": 80,
+  "laddeffekt_kw": 11,
+  "forlust_pct": 10,
+  "forbrukning_kwh_mil": 1.8,
+  "exempel": true
+ },
+ "sources": {
+  "skvEl": {
+   "url": "https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/energiskatter/skattpael.4.15532c7b1442f256bae5e4c.html",
+   "label": {
+    "sv": "Skatteverket: Skatt på el, skattesats 2026 och tidigare år",
+    "en": "Swedish Tax Agency: tax on electricity, 2026 rate and earlier years"
+   }
+  },
+  "skvSankt2026": {
+   "url": "https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/nyheterinompunktskatter/2025/nyheterinompunktskatter/sanktskattpael1januari2026.5.1522bf3f19aea8075ba96f.html",
+   "label": {
+    "sv": "Skatteverket: Sänkt skatt på el 1 januari 2026",
+    "en": "Swedish Tax Agency: lower tax on electricity from 1 January 2026"
+   }
+  },
+  "lse": {
+   "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-19941776-om-skatt-pa-energi_sfs-1994-1776/",
+   "label": {
+    "sv": "Lag (1994:1776) om skatt på energi, 11 kap. 3, 4 och 9 §§",
+    "en": "Energy Tax Act (1994:1776), chapter 11, sections 3, 4 and 9"
+   }
+  },
+  "pm2027": {
+   "url": "https://www.regeringen.se/rattsliga-dokument/departementsserien-och-promemorior/2026/03/slopad-indexering-av-energiskatten-pa-el/",
+   "label": {
+    "sv": "Regeringen: promemoria Slopad indexering av energiskatten på el (Fi2026/00776)",
+    "en": "Government: memorandum on ending indexation of the electricity tax (Fi2026/00776)"
+   }
+  },
+  "skvMoms": {
+   "url": "https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html",
+   "label": {
+    "sv": "Skatteverket: Momssatser och undantag från moms",
+    "en": "Swedish Tax Agency: VAT rates and exemptions"
+   }
+  },
+  "embElrakning": {
+   "url": "https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Elräkningen, vad du betalar för",
+    "en": "Swedish Consumers’ Energy Markets Bureau: the electricity bill explained"
+   }
+  },
+  "embEnergiskatt": {
+   "url": "https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/energiskatt/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Energiskatt, skattesatser och kostnader",
+    "en": "Swedish Consumers’ Energy Markets Bureau: energy tax rates and costs"
+   }
+  },
+  "embKvart": {
+   "url": "https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/valja-elavtal/olika-avtalstyper/kvartprisavtal/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Kvartprisavtal",
+    "en": "Swedish Consumers’ Energy Markets Bureau: quarter-hour price contracts"
+   }
+  },
+  "embKvartNyhet": {
+   "url": "https://www.energimarknadsbyran.se/nyheter/nyhetsarkiv/2025/idag-kan-ditt-timavtal-ga-over-till-ett-kvartprisavtal/",
+   "label": {
+    "sv": "Energimarknadsbyrån: elpriset sätts per kvart från 1 oktober 2025",
+    "en": "Swedish Consumers’ Energy Markets Bureau: prices set per quarter hour from 1 October 2025"
+   }
+  },
+  "embLagenhet": {
+   "url": "https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/elforbrukning/normal-elforbrukning-och-elkostnad-for-lagenhet/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Normal elförbrukning och elkostnad för lägenhet",
+    "en": "Swedish Consumers’ Energy Markets Bureau: normal consumption for a flat"
+   }
+  },
+  "embVilla": {
+   "url": "https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/elforbrukning/normal-elforbrukning-och-elkostnad-for-villa/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Normal elförbrukning och elkostnad för villa",
+    "en": "Swedish Consumers’ Energy Markets Bureau: normal consumption for a house"
+   }
+  },
+  "embForbrukning": {
+   "url": "https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elnatsavtalet/natavgifter/elmatare-och-elforbrukning/forbrukning/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Förbrukning, kWh och effekt",
+    "en": "Swedish Consumers’ Energy Markets Bureau: consumption, kWh and power"
+   }
+  },
+  "embEffekt": {
+   "url": "https://www.energimarknadsbyran.se/nyheter/nyhetsarkiv/2026/nya-besked-om-effekttariffer-sa-paverkas-du-som-kund/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Nya besked om effekttariffer (mars 2026)",
+    "en": "Swedish Consumers’ Energy Markets Bureau: new decision on power tariffs (March 2026)"
+   }
+  },
+  "embElomrade": {
+   "url": "https://www.energimarknadsbyran.se/el/elmarknaden/elomraden/vilket-elomrade-tillhor-du/",
+   "label": {
+    "sv": "Energimarknadsbyrån: Vilket elområde tillhör du?",
+    "en": "Swedish Consumers’ Energy Markets Bureau: which bidding zone are you in?"
+   }
+  },
+  "eiNat": {
+   "url": "https://ei.se/om-oss/statistik-och-oppna-data/natavgifter---elnat",
+   "label": {
+    "sv": "Energimarknadsinspektionen: Nätavgifter elnät, hushållskunder 2026",
+    "en": "Swedish Energy Markets Inspectorate (Ei): household grid charges 2026"
+   }
+  },
+  "eiOppna": {
+   "url": "https://ei.se/om-oss/statistik-och-oppna-data/oppna-data",
+   "label": {
+    "sv": "Energimarknadsinspektionen: Öppna data, villkor för återanvändning",
+    "en": "Ei: open data and reuse terms"
+   }
+  },
+  "eiEffekt": {
+   "url": "https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter",
+   "label": {
+    "sv": "Energimarknadsinspektionen: Effektavgifter, föreskrifterna upphävda juni 2026",
+    "en": "Ei: power charges, regulation repealed in June 2026"
+   }
+  },
+  "eiElomraden": {
+   "url": "https://ei.se/konsument/el/elmarknaden/elomraden",
+   "label": {
+    "sv": "Energimarknadsinspektionen: Elområden",
+    "en": "Ei: bidding zones"
+   }
+  },
+  "svkElomraden": {
+   "url": "https://www.svk.se/om-kraftsystemet/om-elmarknaden/elomraden/",
+   "label": {
+    "sv": "Svenska kraftnät: Elområden",
+    "en": "Svenska kraftnät: bidding zones"
+   }
+  },
+  "svkDagenFore": {
+   "url": "https://www.svk.se/om-kraftsystemet/om-elmarknaden/dagen-fore-marknaden--fysisk-handel-med-el/",
+   "label": {
+    "sv": "Svenska kraftnät: Dagen före-marknaden, auktion kl. 12",
+    "en": "Svenska kraftnät: the day-ahead market, auction at 12:00"
+   }
+  },
+  "svkKvart": {
+   "url": "https://www.svk.se/utveckling-av-kraftsystemet/systemansvar--elmarknad/ny-nordisk-balanseringsmodell-nbm/15-minuters-tidsupplosning/",
+   "label": {
+    "sv": "Svenska kraftnät: 15 minuters tidsupplösning",
+    "en": "Svenska kraftnät: 15-minute time resolution"
+   }
+  },
+  "natomraden": {
+   "url": "https://www.natomraden.se/",
+   "label": {
+    "sv": "Nätområden.se (Svenska kraftnät): vilket elområde och nätområde du tillhör",
+    "en": "Nätområden.se (Svenska kraftnät): find your bidding zone and grid area"
+   }
+  },
+  "scbElpriser": {
+   "url": "https://www.statistikdatabasen.scb.se/pxweb/sv/ssd/START__EN__EN0301__EN0301A/",
+   "label": {
+    "sv": "SCB: Elpriser och elavtal (EN0301A), statistikdatabasen",
+    "en": "Statistics Sweden: electricity prices and contracts (EN0301A)"
+   }
+  },
+  "scbOppna": {
+   "url": "https://www.scb.se/vara-tjanster/oppna-data/",
+   "label": {
+    "sv": "SCB: Öppna data, licens CC0",
+    "en": "Statistics Sweden: open data, CC0 licence"
+   }
+  },
+  "regElstod": {
+   "url": "https://www.regeringen.se/regeringens-politik/energi/fragor-och-svar-om-det-tillfalliga-el--och-gasstodet/",
+   "label": {
+    "sv": "Regeringen: Frågor och svar om det tillfälliga el- och gasstödet 2026",
+    "en": "Government: questions and answers on the temporary electricity and gas support 2026"
+   }
+  },
+  "fkElstod": {
+   "url": "https://www.forsakringskassan.se/privatperson/utbetalning-av-elstod-2026",
+   "label": {
+    "sv": "Försäkringskassan: Utbetalning av elstöd 2026",
+    "en": "Försäkringskassan: payment of the 2026 electricity support"
+   }
+  },
+  "fkElstod2022": {
+   "url": "https://www.forsakringskassan.se/privatperson/utbetalning-av-elstod-2026/elstod-for-2021-2022",
+   "label": {
+    "sv": "Försäkringskassan: Elstöd för 2021–2022",
+    "en": "Försäkringskassan: electricity support for 2021–2022"
+   }
+  },
+  "bp2026": {
+   "url": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/budgetpropositionen-for-2026-utgiftsomrade-21_hd031d23/html/",
+   "label": {
+    "sv": "Budgetpropositionen för 2026, utgiftsområde 21 Energi (högkostnadsskydd)",
+    "en": "Budget bill for 2026, expenditure area 21 Energy (high-cost protection)"
+   }
+  },
+  "skvMikro": {
+   "url": "https://www.skatteverket.se/privat/fastigheterochbostad/inkomsterfranbostad/mikroproduktionavfornybarelprivatbostad.4.12815e4f14a62bc048f41a7.html",
+   "label": {
+    "sv": "Skatteverket: Mikroproduktion av förnybar el, skattereduktionen slopad 2026",
+    "en": "Swedish Tax Agency: micro-production of renewable electricity, tax reduction ended 2026"
+   }
+  },
+  "emElcert": {
+   "url": "https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/elkundens-bidrag-till-fornybar-elproduktion/",
+   "label": {
+    "sv": "Energimyndigheten: Elkundens bidrag till förnybar elproduktion (elcertifikat)",
+    "en": "Swedish Energy Agency: the consumer’s contribution through electricity certificates"
+   }
+  },
+  "emElcertSlut": {
+   "url": "https://www.energimyndigheten.se/nyhetsarkiv/2026/energimyndigheten-ska-mojliggora-ett-tidigare-avslut-av-elcertifikatsystemet/",
+   "label": {
+    "sv": "Energimyndigheten: uppdrag om tidigare avslut av elcertifikatsystemet (juni 2026)",
+    "en": "Swedish Energy Agency: assignment to close the certificate system earlier (June 2026)"
+   }
+  },
+  "emSpara": {
+   "url": "https://www.energimyndigheten.se/effektiv-energianvandning/hushall/spara-energi-enkla-tips/",
+   "label": {
+    "sv": "Energimyndigheten: Spara energi, enkla tips (förbrukning per apparat)",
+    "en": "Swedish Energy Agency: simple energy-saving tips (use per appliance)"
+   }
+  },
+  "entsoe": {
+   "url": "https://transparency.entsoe.eu/",
+   "label": {
+    "sv": "ENTSO-E Transparency Platform: day-ahead-priser per elområde (visning)",
+    "en": "ENTSO-E Transparency Platform: day-ahead prices per bidding zone (viewing)"
+   }
+  },
+  "entsoeReuse": {
+   "url": "https://transparency.entsoe.eu/content/static_content/Static%20content/terms%20and%20conditions/terms%20and%20conditions.html",
+   "label": {
+    "sv": "ENTSO-E: Terms and conditions och List of data available for free re-use",
+    "en": "ENTSO-E: terms and conditions and list of data available for free re-use"
+   }
+  }
+ }
+}

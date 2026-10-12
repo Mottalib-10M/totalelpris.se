@@ -1,0 +1,21 @@
+---
+/** Page embarquable (iframe) : calculateur sans navigation. noindex, hors sitemap (astro.config). */
+import '../../styles/global.css';
+import PrisCalc from '../../components/calc/PrisCalc';
+import { SITE_URL } from '../../data/site-config';
+import { STANDARD_NAT } from '../../lib/verktyg';
+---
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elpriskalkylen – Elpriskollen</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={`${SITE_URL}/sv/`} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white p-2 text-navy-900">
+    <PrisCalc client:load lang="sv" nat={STANDARD_NAT} />
+    <p class="mt-2 text-center text-xs text-navy-600"><a href={`${SITE_URL}/sv/`} target="_blank" rel="noopener" class="underline">Elpriskollen · räknas i webbläsaren</a></p>
+  </body>
+</html>

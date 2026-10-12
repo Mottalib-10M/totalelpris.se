@@ -1,0 +1,17 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'sv';
+---
+<PageLayout title={`Redaktionell policy – ${SITE_NAMES[lang]}`} description="Så kontrollerar Elpriskollen skattesatser och nätavgifter: bara officiella källor, ett datum per värde, automatiska tester och öppna rättelser." lang={lang} noindex={true} breadcrumbs={[{ label: 'Redaktionell policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Redaktionell policy</h1>
+    <h2>Källor</h2><p>Vi använder bara primära källor: lag (1994:1776) om skatt på energi och Skatteverket för energiskatten, Energimarknadsinspektionen för nätavgifterna, SCB för statistiken över elavtal, Svenska kraftnät för elområdena, Energimyndigheten och Energimarknadsbyrån för förbrukningsvärden. En blogg, en jämförelsesajt eller ett elbolags kampanjsida är aldrig en källa. Varje värde står i parameterfilen med källa och datum ({P.retrieved_at}).</p>
+    <h2>Det vi inte publicerar</h2><p>Ett värde vi inte har kunnat läsa i en officiell källa publiceras inte. Spotpriser från elbörsen återges inte, eftersom de inte får återpubliceras utan licens; du anger ditt eget pris. Vi rankar inga elhandlare och tar inte betalt för att nämna någon.</p>
+    <h2>Kontroll</h2><p>Beräkningsmotorn testas automatiskt vid varje bygge mot kända värden, bland annat Ei:s typfall och SCB:s publicerade månadspriser. Skattesatser och tariffer gås igenom vid varje årsskifte och när en ändring aviseras, till exempel energiskatten för 2027.</p>
+    <h2>Rättelser</h2><p>Fel rättas så snart de bekräftats och datumet på sidan ändras. Skriv till <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Läs mer i <a href={route('method', lang)}>metod och källor</a> och <a href={route('about', lang)}>om oss</a>.</p>
+  </div>
+</PageLayout>

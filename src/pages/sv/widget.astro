@@ -1,0 +1,22 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema } from '../../lib/seo';
+const lang = 'sv';
+const code = `<iframe src="${SITE_URL}/embed/elpris/" title="Totalpris på el – kalkylator" width="100%" height="1250" style="border:0;max-width:1100px" loading="lazy"></iframe>`;
+---
+<PageLayout title="Bädda in elpriskalkylen" description="Kopiera koden och klistra in den på din sida. Bostadsrättsföreningar, villaföreningar och lokala nyhetssajter använder den för att låta läsarna räkna " lang={lang} noindex={true} jsonLd={[breadcrumbSchema([{ name: 'Start', path: route('home', lang) }, { name: 'Widget', path: route('widget', lang) }])]} breadcrumbs={[{ label: 'Widget' }]} showAuthor={false}>
+  <header class="mb-6">
+    <h1 class="text-3xl font-bold text-navy-900 md:text-4xl">Bädda in elpriskalkylen</h1>
+    <p class="mt-3 text-lg text-navy-700">Kopiera koden och klistra in den på din sida. Bostadsrättsföreningar, villaföreningar och lokala nyhetssajter använder den för att låta läsarna räkna ut vad elen kostar med skatt och nätavgift.</p>
+  </header>
+  <div class="prose prose-slate max-w-none">
+    <pre class="overflow-x-auto rounded-lg bg-navy-900 p-4 text-sm text-white"><code>{code}</code></pre>
+    <p>Villkor: länken under kalkylatorn ska synas, kalkylatorn får inte ändras och den tillhandahålls utan garanti. Energiskatt och nätavgifter uppdateras här, så din inbäddning följer med utan att du gör något. Engelsk version: <code>{`${SITE_URL}/embed/electricity-price/`}</code>.</p>
+    <p><a href={route('contact', lang)}>Kontakt</a></p>
+  </div>
+  <div class="mt-8 overflow-hidden rounded-xl border border-navy-200">
+    <iframe src="/embed/elpris/" title="Totalpris på el – kalkylator" width="100%" height="1250" style="border:0" loading="lazy"></iframe>
+  </div>
+</PageLayout>

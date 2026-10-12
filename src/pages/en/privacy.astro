@@ -1,0 +1,24 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { P } from '../../lib/engine/params';
+const lang = 'en';
+---
+<PageLayout title={`Privacy policy – ${SITE_NAMES[lang]}`} description="Elpriskollen calculates in your browser: spot price, consumption and pasted price lists are never sent to us. How data is handled under the GDPR, and your rights." lang={lang} noindex={true} breadcrumbs={[{ label: 'Privacy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Privacy policy</h1>
+    <h2>Controller</h2>
+    <LegalIdentity lang={lang} />
+    <h2>What you type</h2>
+    <p>Spot price, mark-up, consumption, grid area and any price list you paste are processed only in your browser. Nothing is sent to us or to anyone else, and the site fetches no electricity prices from third parties while you calculate. If you use the share link, your values appear in the address, visible to whoever receives it.</p>
+    <h2>Technical logs at the host</h2>
+    <p>Like any web server, the host may briefly record IP address and time to serve pages and prevent abuse. We have no access to those logs to identify visitors. Host details: see the <a href={route('terms', lang)}>legal notice</a>.</p>
+    <h2>Email</h2>
+    <p>If you write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, your address is used only to reply and is deleted once the matter is closed, within twelve months at most. Legal basis: legitimate interest in answering (GDPR Article 6(1)(f)).</p>
+    <h2>Your rights</h2>
+    <p>You have the right of access, rectification, erasure and objection; write to the address above. You may also complain to the Swedish Authority for Privacy Protection (IMY) or to the {LEGAL.supervisoryAuthority}, where the publisher is established.</p>
+    <p>Updated {LAST_UPDATED}.</p>
+  </div>
+</PageLayout>
