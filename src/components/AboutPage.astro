@@ -11,8 +11,8 @@ interface Props { lang: Locale }
 const { lang } = Astro.props;
 const sv = lang === 'sv';
 const antal = rangordna('L16').length;
-const title = sv ? 'Om Elpriskollen 2026: vem som räknar och varför' : 'About Elpriskollen 2026: who does the sums and why';
-const description = sv ? 'Om Elpriskollen 2026: utgivaren Radif Partners, varför vi räknar totalpriset på el i stället för att visa börspriset, hur sajten finansieras och hur fel rättas.' : 'About Elpriskollen 2026: the publisher Radif Partners, why we work out the all-in electricity price instead of the exchange price, how it is funded, how errors are fixed.';
+const title = sv ? 'Elpriskollen 2026: vem som räknar ut elpriset och varför' : 'Elpriskollen 2026: who works out the price, and why';
+const description = sv ? 'Om Elpriskollen 2026: utgivaren Radif Partners, varför vi räknar totalpriset på el i stället för att visa börspriset, hur sajten finansieras och hur fel rättas.' : 'Elpriskollen 2026: the publisher Radif Partners, why we show the all-in electricity price rather than the exchange price, how it is funded and corrected.';
 const h1 = sv ? 'Om Elpriskollen' : 'About Elpriskollen';
 const path = route('about', lang);
 ---

@@ -43,7 +43,7 @@ const topp = (h: Helpers, mm: string) => { const { ar, man } = h.M.manadDelar(mm
 export const HOME: Record<'sv' | 'en', HomeText> = {
   sv: {
     title: 'Elpris idag 2026: ditt totalpris per kWh med skatt och nät',
-    description: 'Elpris idag 2026: skriv in spotpriset och se vad du betalar per kWh med energiskatt 36 öre, moms och ditt elnätsföretags avgift, för SE1 till SE4.',
+    description: 'Elpris idag 2026: skriv in spotpriset och se vad du betalar per kWh med energiskatt 36 öre, moms och ditt elnätsföretags avgift, i SE1, SE2, SE3 och SE4.',
     h1: 'Elpris idag: vad elen kostar dig per kWh, med skatt och nätavgift',
     intro: 'Spotpriset är bara en del av priset. Här räknar du ut resten för ditt elnät.',
     resume: (h) => {
