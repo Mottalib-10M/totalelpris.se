@@ -45,14 +45,14 @@ const tp = verktygProps(page.toolProps);
 ---
 <PageLayout title={x.title} description={x.description} lang={lang} jsonLd={jsonLd} faqs={faqs} related={related} sources={sources} breadcrumbs={[{ label: x.nav }]}>
   <article>
-    <header class="mb-6">
-      <h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{x.h1}</h1>
-      <p class="mt-3 text-lg text-navy-700">{x.intro}</p>
-      <p class="mt-3 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method', lang)}</a></p>
+    <header class="mb-3">
+      <h1 class="text-2xl font-bold text-navy-900 md:text-3xl">{x.h1}</h1>
+      <p class="mt-1 text-base text-navy-700 md:text-lg">{x.intro}</p>
+      <p class="mt-1 text-sm text-navy-600">{ui.reviewedBy} <a href={route('about', lang)} class="underline hover:text-navy-900">{AUTHOR_NAME}</a> · <a href={route('editorial', lang)} class="underline hover:text-navy-900">{ui.editorialPolicy}</a> · <a href={methodHref} class="underline hover:text-navy-900">{label('method', lang)}</a></p>
     </header>
     {page.tool ? (
       <>
-        <Clamp text={resume} lang={lang} id={`clamp-${page.id}`} class="mb-6" />
+        <Clamp text={resume} lang={lang} id={`clamp-${page.id}`} class="mb-3" />
         <div data-outil>
           {page.tool === 'pris' && <PrisCalc client:load lang={lang} methodHref={methodHref} mode={tp.mode as 'idag'} nat={tp.nat} fall={tp.fall} zon={tp.zon} skatt={tp.skatt} />}
           {page.tool === 'apparat' && <ApparatCalc client:load lang={lang} methodHref={methodHref} apparat={tp.apparat} nat={tp.nat} fall={tp.fall} zon={tp.zon} skatt={tp.skatt} />}
@@ -64,7 +64,7 @@ const tp = verktygProps(page.toolProps);
       </>
     ) : (
       <>
-        <p class="mb-6 text-navy-800" set:html={resume} />
+        <Clamp text={resume} lang={lang} id={`clamp-${page.id}`} class="mb-3" />
         {page.mini && <MiniSim client:load kind={page.mini} lang={lang} href={miniHref} />}
       </>
     )}

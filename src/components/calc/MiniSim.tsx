@@ -18,7 +18,7 @@ export default function MiniSim({ kind, lang = 'en', href }: Props) {
   const out = useMemo(() => spec.run(v), [v, spec]);
   const set = (id: string) => (x: number) => setV((o) => ({ ...o, [id]: x }));
   return (
-    <div data-chrome data-mini={kind} className="not-prose rechner-mini my-8 rounded-xl border border-accent-200 bg-white p-4 shadow-sm sm:p-5">
+    <div data-chrome data-mini={kind} className="not-prose rechner-mini my-6 rounded-xl border border-accent-200 bg-white p-4 shadow-sm sm:p-5">
       <p className="text-base font-semibold text-navy-900">{spec.title}</p>
       <div className="mt-3 grid gap-5 sm:grid-cols-2">
         <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>

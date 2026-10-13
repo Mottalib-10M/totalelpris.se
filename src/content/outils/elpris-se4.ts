@@ -39,7 +39,7 @@ export default defineGuide({
     intro: 'SE4 är det sydligaste elområdet, med Skåne, Blekinge och södra Småland, och oftast det dyraste.',
     resume: (h) => {
       const v = V(h);
-      return `I SE4 kostade elhandeln med rörligt avtal ${h.ore(v.spot)} exklusive moms för en elvärmd villa i ${mn(h, h.M.SENASTE_MANAD)}, enligt SCB, den högsta nivån av de fyra elområdena. Prisskillnaden mellan årstiderna är också störst här: sedan 2023 har vintermånaderna december till februari i snitt kostat ${h.ore(v.vinter)} och sommarmånaderna juni till augusti ${h.ore(v.sommar)}, exklusive moms. Elområdet omfattar enligt Svenska kraftnäts karta bland annat nätområdena Malmö-Burlöv, Lund, Helsingborg, Halmstad, Växjö och Kalmar. Med E.ON Energidistributions nät för en villa med 20 ampere, energiskatten på ${h.ore(h.P.skatt.energiskatt_ore)} och moms blir totalpriset ${h.ore(v.p.total)} per kWh. För en elvärmd villa i SE4 betyder det att vinterns räkning kan bli flera gånger sommarens; kalkylatorn visar månaden för din förbrukning och ditt eget nät, med de fasta avgifterna inräknade.`;
+      return `I SE4 kostade elhandeln med rörligt avtal ${h.ore(v.spot)} exklusive moms för en elvärmd villa i ${mn(h, h.M.SENASTE_MANAD)}, enligt SCB, den högsta nivån av de fyra elområdena. Prisskillnaden mellan årstiderna är också störst här: sedan 2023 har vintermånaderna december till februari i snitt kostat ${h.ore(v.vinter)} och sommarmånaderna juni till augusti ${h.ore(v.sommar)}, exklusive moms. Elområdet omfattar enligt Svenska kraftnäts karta bland annat nätområdena Malmö-Burlöv, Lund, Helsingborg, Halmstad, Växjö och Kalmar. Med E.ON Energidistributions nät för en villa med 20 ampere, energiskatten på ${h.ore(h.P.skatt.energiskatt_ore)} och moms blir totalpriset ${h.ore(v.p.total)}. För en elvärmd villa i SE4 betyder det att vinterns räkning kan bli flera gånger sommarens; kalkylatorn visar månaden för din förbrukning och ditt eget nät, med de fasta avgifterna inräknade.`;
     },
     faqs: (h) => {
       const v = V(h);
@@ -59,7 +59,7 @@ ${h.table(['Period', 'Rörligt, exkl. moms', 'Elhandel för en månad, inkl. mom
 ${h.table(['Månad', 'Rörligt, exkl. moms', 'Inkl. moms'], v.top3.map(([m, x]) => [mn(h, m), h.ore(x), h.ore(x * v.mo)]), 'SCB, villa med elvärme, SE4.', ['l', 'r', 'r'])}
 <p>År 2022 rymmer toppen i hela serien. Det första elstödet gällde förbrukningen från oktober 2021 till september 2022 och omfattade bara södra halvan av landet. Vintern 2026 fick SE4 åter det högsta stödet per kWh, ${h.num(v.stod)} öre; se ${h.a('elstod', 'elstöd')} för reglerna.</p>
 <h2>Nätavgifterna i söder</h2>
-<p>E.ON Energidistributions område Syd och Mellersta tar för en villa med 20 ampere ${h.kr(v.t.fastKrPerAr * v.mo)} om året i fast avgift och ${h.ore(v.t.rorligOre * v.mo)} per kWh med moms. Lund har ett annat nät, Kraftringen, och Helsingborg Öresundskraft: jämför ${h.a('elpris-malmo', 'Malmö')}, ${h.a('elpris-lund', 'Lund')} och ${h.a('elpris-helsingborg', 'Helsingborg')}.</p>`;
+<p>E.ON Energidistributions område Syd och Mellersta tar för en villa med 20 ampere ${h.kr(v.t.fastKrPerAr * v.mo)} om året i fast avgift och ${h.ore(v.t.rorligOre * v.mo)} med moms. Lund har ett annat nät, Kraftringen, och Helsingborg Öresundskraft: jämför ${h.a('elpris-malmo', 'Malmö')}, ${h.a('elpris-lund', 'Lund')} och ${h.a('elpris-helsingborg', 'Helsingborg')}.</p>`;
     },
   },
   en: {
@@ -72,7 +72,7 @@ ${h.table(['Månad', 'Rörligt, exkl. moms', 'Inkl. moms'], v.top3.map(([m, x]) 
     intro: 'SE4 is the southernmost zone, covering Skåne, Blekinge and southern Småland, and usually the most expensive.',
     resume: (h) => {
       const v = V(h);
-      return `In SE4 the variable retail price for an electrically heated house was ${h.ore(v.spot)} before VAT in ${mn(h, h.M.SENASTE_MANAD)}, according to Statistics Sweden, the highest of Sweden’s four bidding zones. The seasonal swing is widest here too: since 2023 the winter months December to February have averaged ${h.ore(v.vinter)} and the summer months June to August ${h.ore(v.sommar)}, before VAT. On Svenska kraftnät’s map the zone includes grid areas such as Malmö-Burlöv, Lund, Helsingborg, Halmstad, Växjö and Kalmar. With E.ON Energidistribution’s grid for a 20 A house, energy tax of ${h.ore(h.P.skatt.energiskatt_ore)} and VAT, the all-in price is ${h.ore(v.p.total)} per kWh. For a heated house in SE4 that means a winter bill can be several times the summer one; the calculator shows the month for your consumption.`;
+      return `In SE4 the variable retail price for an electrically heated house was ${h.ore(v.spot)} before VAT in ${mn(h, h.M.SENASTE_MANAD)}, according to Statistics Sweden, the highest of Sweden’s four bidding zones. The seasonal swing is widest here too: since 2023 the winter months December to February have averaged ${h.ore(v.vinter)} and the summer months June to August ${h.ore(v.sommar)}, before VAT. On Svenska kraftnät’s map the zone includes grid areas such as Malmö-Burlöv, Lund, Helsingborg, Halmstad, Växjö and Kalmar. With E.ON Energidistribution’s grid for a 20 A house, energy tax of ${h.ore(h.P.skatt.energiskatt_ore)} and VAT, the all-in price is ${h.ore(v.p.total)}. For a heated house in SE4 that means a winter bill can be several times the summer one; the calculator shows the month for your consumption.`;
     },
     faqs: (h) => {
       const v = V(h);
@@ -92,7 +92,7 @@ ${h.table(['Period', 'Variable, before VAT', 'Energy for one month, incl. VAT'],
 ${h.table(['Month', 'Variable, before VAT', 'Incl. VAT'], v.top3.map(([m, x]) => [mn(h, m), h.ore(x), h.ore(x * v.mo)]), 'Statistics Sweden, house with electric heating, SE4.', ['l', 'r', 'r'])}
 <p>The year 2022 holds the peak of the whole series. The first electricity support covered consumption from October 2021 to September 2022 and applied only to the southern half of the country. In winter 2026 SE4 again received the highest support per kWh, ${h.num(v.stod)} öre; see ${h.a('elstod', 'electricity support')} for the rules.</p>
 <h2>Grid fees in the south</h2>
-<p>E.ON Energidistribution’s Syd och Mellersta area charges a 20 A house ${h.kr(v.t.fastKrPerAr * v.mo)} a year in fixed fees and ${h.ore(v.t.rorligOre * v.mo)} per kWh with VAT. Lund is on another grid, Kraftringen, and Helsingborg on Öresundskraft: compare ${h.a('elpris-malmo', 'Malmö')}, ${h.a('elpris-lund', 'Lund')} and ${h.a('elpris-helsingborg', 'Helsingborg')}.</p>`;
+<p>E.ON Energidistribution’s Syd och Mellersta area charges a 20 A house ${h.kr(v.t.fastKrPerAr * v.mo)} a year in fixed fees and ${h.ore(v.t.rorligOre * v.mo)} with VAT. Lund is on another grid, Kraftringen, and Helsingborg on Öresundskraft: compare ${h.a('elpris-malmo', 'Malmö')}, ${h.a('elpris-lund', 'Lund')} and ${h.a('elpris-helsingborg', 'Helsingborg')}.</p>`;
     },
   },
 });

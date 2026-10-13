@@ -12,8 +12,8 @@ const { title, description, lang, canonical, ogImage, noindex = false, jsonLd = 
 const ui = t(lang);
 ---
 <BaseLayout title={title} description={description} lang={lang} canonical={canonical} ogImage={ogImage} noindex={noindex} jsonLd={jsonLd} breadcrumbs={breadcrumbs}>
-  <div class="mx-auto max-w-6xl px-4 py-8">
-    <p data-chrome class="mb-6 border-b border-navy-100 pb-3 text-sm text-navy-500">
+  <div class="mx-auto max-w-6xl px-4 pb-8 pt-4">
+    <p data-chrome class="mb-3 border-b border-navy-100 pb-2 text-sm text-navy-500">
       {ui.updatedOn} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, __LT[lang])}</time>
     </p>
     <slot />

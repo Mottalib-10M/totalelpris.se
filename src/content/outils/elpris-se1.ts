@@ -37,7 +37,7 @@ export default defineGuide({
     intro: 'SE1 är det nordligaste elområdet, med Luleå, Skellefteå och Boden, och oftast det billigaste.',
     resume: (h) => {
       const v = V(h);
-      return `I elområde SE1 kostade ett rörligt elavtal för en villa utan elvärme ${h.ore(v.spot)} exklusive moms i ${mn(h, h.M.SENASTE_MANAD)} enligt SCB, påslaget inräknat. Det är den lägsta nivån av de fyra områdena. Två saker gör totalpriset ännu lägre för många här. I hela Norrbottens län, liksom i Västerbotten och Jämtland, får hushållen ett avdrag på ${h.ore(h.P.skatt.norrlandsavdrag_ore)} på energiskatten, som därför blir ${h.ore(h.P.skatt.energiskatt_sankt_ore)} i stället för ${h.ore(h.P.skatt.energiskatt_ore)}. Och nätföretag som Luleå Energi Elnät hör till de billigare i Energimarknadsinspektionens sammanställning. En villa med 16 ampere i Luleå betalar med SCB:s snittpris ${h.ore(v.sankt.total)} per kWh med moms, mot ${h.ore(v.normal.total)} utan skatteavdraget. Skriv in dagens spotpris i kalkylatorn för att se ditt eget totalpris, och välj ett annat nät om du bor utanför Luleå.`;
+      return `I elområde SE1 kostade ett rörligt elavtal för en villa utan elvärme ${h.ore(v.spot)} exklusive moms i ${mn(h, h.M.SENASTE_MANAD)} enligt SCB, påslaget inräknat. Det är den lägsta nivån av de fyra områdena. Två saker gör totalpriset ännu lägre för många här. I hela Norrbottens län, liksom i Västerbotten och Jämtland, får hushållen ett avdrag på ${h.ore(h.P.skatt.norrlandsavdrag_ore)} på energiskatten, som därför blir ${h.ore(h.P.skatt.energiskatt_sankt_ore)} i stället för ${h.ore(h.P.skatt.energiskatt_ore)}. Och nätföretag som Luleå Energi Elnät hör till de billigare i Energimarknadsinspektionens sammanställning. En villa med 16 ampere i Luleå betalar med SCB:s snittpris ${h.ore(v.sankt.total)} med moms, mot ${h.ore(v.normal.total)} utan skatteavdraget. Skriv in dagens spotpris i kalkylatorn för att se ditt eget totalpris, och välj ett annat nät om du bor utanför Luleå.`;
     },
     faqs: (h) => {
       const v = V(h);
@@ -57,7 +57,7 @@ ${h.table(['År', 'SE1 inkl. moms', 'SE4 inkl. moms', 'Skillnad'], rader, 'SCB, 
 <h2>Skatteavdraget i Norrbotten, räknat på en villa</h2>
 <p>Avdraget på ${h.ore(h.P.skatt.norrlandsavdrag_ore)} exklusive moms blir ${h.ore(h.P.skatt.norrlandsavdrag_ore * v.mo)} med moms. För en elvärmd villa som använder 20 000 kWh om året är det ${h.kr((20000 * h.P.skatt.norrlandsavdrag_ore * v.mo) / 100)} mindre i skatt per år. Med ${h.a('energiskatt', 'energiskatten')} på normal nivå hade samma villa betalat det beloppet till staten i stället.</p>
 <h2>Nätet i SE1: Luleå Energi som exempel</h2>
-<p>Luleå Energi Elnät tar för en villa med 16 ampere en fast avgift på ${h.kr(v.t.fastKrPerAr * v.mo)} om året och ${h.ore(v.t.rorligOre * v.mo)} per kWh, båda med moms, enligt Energimarknadsinspektionen för ${h.P.year}. Bor du utanför Luleå har du ett annat nätföretag; välj det i kalkylatorn eller ${h.a('jamfor-natavgift', 'jämför alla nätområden')}. Mer om staden på sidan ${h.a('elpris-lulea', 'elpris i Luleå')}.</p>`;
+<p>Luleå Energi Elnät tar för en villa med 16 ampere en fast avgift på ${h.kr(v.t.fastKrPerAr * v.mo)} om året och ${h.ore(v.t.rorligOre * v.mo)}, båda med moms, enligt Energimarknadsinspektionen för ${h.P.year}. Bor du utanför Luleå har du ett annat nätföretag; välj det i kalkylatorn eller ${h.a('jamfor-natavgift', 'jämför alla nätområden')}. Mer om staden på sidan ${h.a('elpris-lulea', 'elpris i Luleå')}.</p>`;
     },
   },
   en: {
@@ -70,7 +70,7 @@ ${h.table(['År', 'SE1 inkl. moms', 'SE4 inkl. moms', 'Skillnad'], rader, 'SCB, 
     intro: 'SE1 is Sweden’s northernmost bidding zone, home to Luleå, Skellefteå and Boden, and usually the cheapest.',
     resume: (h) => {
       const v = V(h);
-      return `In bidding zone SE1 a variable electricity contract for a house without electric heating cost ${h.ore(v.spot)} before VAT in ${mn(h, h.M.SENASTE_MANAD)} according to Statistics Sweden (SCB), the retailer’s mark-up included. That is the lowest of the four zones. Two things push the all-in price lower still for many residents. Throughout Norrbotten county, as in Västerbotten and Jämtland, households get a deduction of ${h.ore(h.P.skatt.norrlandsavdrag_ore)} on energy tax, which therefore comes to ${h.ore(h.P.skatt.energiskatt_sankt_ore)} instead of ${h.ore(h.P.skatt.energiskatt_ore)}. And grid companies such as Luleå Energi Elnät are among the cheaper ones in the Energy Markets Inspectorate’s figures. A 16 A house in Luleå pays ${h.ore(v.sankt.total)} per kWh with VAT at the SCB average, against ${h.ore(v.normal.total)} without the tax deduction. Enter today’s spot price to see your own figure.`;
+      return `In bidding zone SE1 a variable electricity contract for a house without electric heating cost ${h.ore(v.spot)} before VAT in ${mn(h, h.M.SENASTE_MANAD)} according to Statistics Sweden (SCB), the retailer’s mark-up included. That is the lowest of the four zones. Two things push the all-in price lower still for many residents. Throughout Norrbotten county, as in Västerbotten and Jämtland, households get a deduction of ${h.ore(h.P.skatt.norrlandsavdrag_ore)} on energy tax, which therefore comes to ${h.ore(h.P.skatt.energiskatt_sankt_ore)} instead of ${h.ore(h.P.skatt.energiskatt_ore)}. And grid companies such as Luleå Energi Elnät are among the cheaper ones in the Energy Markets Inspectorate’s figures. A 16 A house in Luleå pays ${h.ore(v.sankt.total)} with VAT at the SCB average, against ${h.ore(v.normal.total)} without the tax deduction. Enter today’s spot price to see your own figure.`;
     },
     faqs: (h) => {
       const v = V(h);
@@ -90,7 +90,7 @@ ${h.table(['Year', 'SE1 incl. VAT', 'SE4 incl. VAT', 'Gap'], rader, 'Statistics 
 <h2>The Norrbotten tax deduction on a real house</h2>
 <p>The deduction of ${h.ore(h.P.skatt.norrlandsavdrag_ore)} before VAT is ${h.ore(h.P.skatt.norrlandsavdrag_ore * v.mo)} with VAT. For an electrically heated house using 20,000 kWh a year that is ${h.kr((20000 * h.P.skatt.norrlandsavdrag_ore * v.mo) / 100)} less tax per year. At the standard rate of ${h.a('energiskatt', 'energy tax')} the same house would pay that amount to the state instead.</p>
 <h2>The grid in SE1: Luleå Energi as an example</h2>
-<p>For a 16 A house Luleå Energi Elnät charges a fixed fee of ${h.kr(v.t.fastKrPerAr * v.mo)} a year and ${h.ore(v.t.rorligOre * v.mo)} per kWh, both with VAT, in the Energy Markets Inspectorate’s ${h.P.year} data. Outside Luleå you have a different grid company: pick it in the calculator or ${h.a('jamfor-natavgift', 'compare every grid area')}. More on the city on ${h.a('elpris-lulea', 'electricity price in Luleå')}.</p>`;
+<p>For a 16 A house Luleå Energi Elnät charges a fixed fee of ${h.kr(v.t.fastKrPerAr * v.mo)} a year and ${h.ore(v.t.rorligOre * v.mo)}, both with VAT, in the Energy Markets Inspectorate’s ${h.P.year} data. Outside Luleå you have a different grid company: pick it in the calculator or ${h.a('jamfor-natavgift', 'compare every grid area')}. More on the city on ${h.a('elpris-lulea', 'electricity price in Luleå')}.</p>`;
     },
   },
 });
