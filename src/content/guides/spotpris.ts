@@ -67,7 +67,7 @@ ${h.table(['Spotpris', 'Spotpris med moms', 'Nät och skatt med moms', 'Totalpri
 <h2>När spotpriset blir negativt</h2>
 <p>Ibland blir spotpriset under noll några kvartar, när det finns mer el än någon vill använda. För ett hushåll med kvartsprisavtal sänker det totalpriset, men energiskatten och nätavgiften ligger kvar. Hur långt ned priset måste gå innan du får betalt för att använda el räknar vi på i guiden om ${h.a('negativa-elpriser', 'negativa elpriser')}.</p>
 <h2>Spotpris, påslag och avtalstyper</h2>
-<p>Hur mycket spotpriset påverkar din räkning beror på avtalet. Med ${h.a('kvartspris', 'kvartsprisavtal')} betalar du varje kvarts pris plus påslag. Med rörligt månadspris betalar du månadens viktade snitt plus påslag, och då spelar det ingen roll för fakturan när på dygnet du använder elen. Med fast pris påverkar spotpriset dig först när avtalet ska förnyas, eftersom elhandlarens erbjudande då bygger på vad marknaden väntar sig för de kommande åren. Elhandlarens påslag och avgifter förklaras i ${h.a('paslag', 'påslag och avgifter')}.</p>`;
+<p>Hur mycket spotpriset påverkar din räkning beror på avtalet. Med ${h.a('kvartspris', 'kvartsprisavtal')} betalar du varje kvarts pris plus påslag. Med rörligt månadspris betalar du månadens viktade snitt plus påslag, och då spelar det ingen roll för fakturan när på dygnet du använder elen. Med fast pris påverkar spotpriset dig först när avtalet ska förnyas, och då är det det nya fasta priset du jämför med, inte dagens spotpris för en enskild kvart. Elhandlarens påslag och avgifter förklaras i ${h.a('paslag', 'påslag och avgifter')}.</p>`;
     },
   },
   en: {
