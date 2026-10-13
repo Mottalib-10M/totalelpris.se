@@ -1,4 +1,4 @@
-# Faits officiels vérifiés — se-elpris (taxes, aides, marché, consommation)
+# Faits officiels vérifiés, se-elpris (taxes, aides, marché, consommation)
 
 Recherche faite le **2026-10-12**. Toutes les pages ont été lues ce jour-là (date de lecture = 2026-10-12 pour chaque fait), uniquement sur des sources officielles : Skatteverket, riksdagen.se (SFS + propositions), regeringen.se, Ei, Energimyndigheten, Svenska kraftnät, Konsumenternas Energimarknadsbyrå, Försäkringskassan.
 Mention **NON CONFIRMÉ** = je n'ai pas trouvé de source officielle qui le dise ; ne pas publier tel quel.
@@ -9,13 +9,13 @@ Mention **NON CONFIRMÉ** = je n'ai pas trouvé de source officielle qui le dise
 
 ### 1.1 Taux normal 2026 : **36,0 öre/kWh, hors moms** (= 45 öre/kWh moms comprise)
 - Valable du 1er janvier 2026 « tills vidare » (aucune date de fin dans la loi pour ce montant ; pour 2027, voir 1.4).
-- Loi, lag (1994:1776) om skatt på energi, **11 kap. 3 §** (version t.o.m. SFS 2026:1287, modifiée par Lag (2025:1357)) — https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-19941776-om-skatt-pa-energi_sfs-1994-1776/
+- Loi, lag (1994:1776) om skatt på energi, **11 kap. 3 §** (version t.o.m. SFS 2026:1287, modifiée par Lag (2025:1357)), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-19941776-om-skatt-pa-energi_sfs-1994-1776/
   > « Energiskatt ska betalas med 36,0 öre per förbrukad kilowattimme elektrisk kraft. »
-- Skatteverket, « Skatt på el » — https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/energiskatter/skattpael.4.15532c7b1442f256bae5e4c.html
+- Skatteverket, « Skatt på el », https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/energiskatter/skattpael.4.15532c7b1442f256bae5e4c.html
   > « Skattesatsen på el för 2026 är 36,0 öre per kilowattimme. »
-- Skatteverket, nyhet « Sänkt skatt på el 1 januari 2026 » — https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/nyheterinompunktskatter/2025/nyheterinompunktskatter/sanktskattpael1januari2026.5.1522bf3f19aea8075ba96f.html
+- Skatteverket, nyhet « Sänkt skatt på el 1 januari 2026 », https://www.skatteverket.se/foretag/skatterochavdrag/punktskatter/nyheterinompunktskatter/2025/nyheterinompunktskatter/sanktskattpael1januari2026.5.1522bf3f19aea8075ba96f.html
   > « Från den 1 januari 2026 sänks skatten på el från 43,9 öre per kilowattimme till 36,0 öre per kilowattimme. »
-- Energimarknadsbyrån, « Energiskatt – skattesatser och kostnader » (senast uppdaterad 2026-10-01) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/energiskatt/
+- Energimarknadsbyrån, « Energiskatt – skattesatser och kostnader » (senast uppdaterad 2026-10-01), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/energiskatt/
   > « Från och med den 1 januari 2026 är den ordinarie energiskatten 36 öre per kWh exklusive moms. Det motsvarar 45 öre per kWh inklusive moms. »
   > « Energiskatten sänktes med 9,875 öre per kWh inklusive moms jämfört med 2025, då den ordinarie skatten var 54,875 öre per kWh inklusive moms. »
 
@@ -29,7 +29,7 @@ Mécanisme juridique : ce n'est pas un taux distinct mais un **avdrag de 9,6 ör
 - Energimarknadsbyrån (même page) :
   > « År 2026 är den reducerade energiskatten 26,4 öre per kWh exklusive moms, vilket motsvarar 33 öre per kWh inklusive moms. »
 
-**Liste des kommuner** — attention : la liste est au **11 kap. 4 §** (et non 3 §, qui donne le montant). Texte de la loi (Lag (2017:409)) et liste identique chez Skatteverket (« Aktuella kommuner ») :
+**Liste des kommuner**, attention : la liste est au **11 kap. 4 §** (et non 3 §, qui donne le montant). Texte de la loi (Lag (2017:409)) et liste identique chez Skatteverket (« Aktuella kommuner ») :
 - **Norrbottens län** : samtliga kommuner
 - **Västerbottens län** : samtliga kommuner
 - **Jämtlands län** : samtliga kommuner
@@ -40,7 +40,7 @@ Mécanisme juridique : ce n'est pas un taux distinct mais un **avdrag de 9,6 ör
 
 Citation loi : « 4 § Förteckning över kommuner som avses i 9 § första stycket 8. Norrbottens län Samtliga kommuner Västerbottens län Samtliga kommuner Jämtlands län Samtliga kommuner Västernorrlands län Sollefteå Ånge Örnsköldsvik Gävleborgs län Ljusdal Dalarnas län Malung-Sälen Mora Orsa Älvdalen Värmlands län Torsby Lag (2017:409). »
 
-### 1.3 Historique (taux normal, hors moms) — Skatteverket, même page, tableau « Skattesatser för tidigare år »
+### 1.3 Historique (taux normal, hors moms), Skatteverket, même page, tableau « Skattesatser för tidigare år »
 | År | Skattesats |
 |---|---|
 | 2025 | 43,9 öre/kWh |
@@ -51,16 +51,16 @@ Citation loi : « 4 § Förteckning över kommuner som avses i 9 § första styc
 | 2020 | 35,3 öre/kWh |
 
 Citation : « 2025 43,9 öre per kilowattimme ». Avec moms en 2025 : 54,875 öre/kWh (Energimarknadsbyrån, cité plus haut).
-Taux réduit 2025 : 43,9 − 9,6 = **34,3 öre/kWh hors moms** — c'est un **calcul** à partir du 9,6 öre que Skatteverket dit « inchangé » ; aucune page officielle lue ne donne le chiffre 34,3 tel quel.
+Taux réduit 2025 : 43,9 − 9,6 = **34,3 öre/kWh hors moms**, c'est un **calcul** à partir du 9,6 öre que Skatteverket dit « inchangé » ; aucune page officielle lue ne donne le chiffre 34,3 tel quel.
 
 ### 1.4 2027 : **rien n'est décidé au 2026-10-12**
 - **Loi en vigueur** (11 kap. 3 § andra–fjärde stycket) : à partir de 2027, le montant **est indexé** sur les prix (KPI de juin à juin), et le gouvernement fixe le montant avant fin novembre.
   > « För kalenderåret 2027 och efterföljande kalenderår ska skatt i stället för vad som anges i första stycket betalas med belopp som räknas om enligt tredje stycket. Regeringen fastställer varje år före november månads utgång det omräknade skattebelopp […] »
 - **Proposition envoyée en consultation (remiss), pas adoptée** : la promemoria « Slopad indexering av energiskatten på el » (Fi2026/00776), publiée le **24 mars 2026**, propose de supprimer l'indexation et de garder 36,0 öre/kWh à partir du 1er janvier 2027.
-  - https://www.regeringen.se/rattsliga-dokument/departementsserien-och-promemorior/2026/03/slopad-indexering-av-energiskatten-pa-el/ — « skattesatsen för 2027 fastställs till 36,0 öre per kilowattimme » ; « Lagändringen föreslås träda i kraft den 1 januari 2027. »
-  - https://www.regeringen.se/pressmeddelanden/2026/03/forslag-om-slopad-indexering-av-elskatt-pa-remiss/ — « Skattesatsen som gäller i dag, 36,0 öre per kilowattimme, föreslås gälla även efter den 31 december 2026 tills vidare. »
+  - https://www.regeringen.se/rattsliga-dokument/departementsserien-och-promemorior/2026/03/slopad-indexering-av-energiskatten-pa-el/, « skattesatsen för 2027 fastställs till 36,0 öre per kilowattimme » ; « Lagändringen föreslås träda i kraft den 1 januari 2027. »
+  - https://www.regeringen.se/pressmeddelanden/2026/03/forslag-om-slopad-indexering-av-elskatt-pa-remiss/, « Skattesatsen som gäller i dag, 36,0 öre per kilowattimme, föreslås gälla även efter den 31 december 2026 tills vidare. »
   - Condition posée par le gouvernement (page « Statens budget », regeringen.se, https://www.regeringen.se/sveriges-regering/finansdepartementet/statens-budget/) : « Om de förslag som remitterats kommer att presenteras i regeringens budgetproposition för 2027 beror på valutgången, det ekonomiska läget, reformutrymmet och finansieringsbehovet […] »
-- **La budgetproposition för 2027 n'avait pas été déposée au 2026-10-12** (année électorale). Vérifié dans l'API officielle du Riksdag : les seules propositions de la session 2026/27 sont la n° 3 (6 oct.), la n° 5 (6 oct.) et la n° 7 (8 oct.) ; il n'y a pas de prop. 2026/27:1 — https://data.riksdagen.se/dokumentlista/?doktyp=prop&rm=2026%2F27&utformat=json . Les communiqués de regeringen.se jusqu'au 12 oct. 2026 n'annoncent pas non plus de budget déposé.
+- **La budgetproposition för 2027 n'avait pas été déposée au 2026-10-12** (année électorale). Vérifié dans l'API officielle du Riksdag : les seules propositions de la session 2026/27 sont la n° 3 (6 oct.), la n° 5 (6 oct.) et la n° 7 (8 oct.) ; il n'y a pas de prop. 2026/27:1, https://data.riksdagen.se/dokumentlista/?doktyp=prop&rm=2026%2F27&utformat=json . Les communiqués de regeringen.se jusqu'au 12 oct. 2026 n'annoncent pas non plus de budget déposé.
 - → Le taux 2027 est **NON CONFIRMÉ**. Deux issues possibles : 36,0 öre si le gel est repris dans le budget et voté, sinon un montant indexé fixé avant fin novembre 2026. À revérifier après le dépôt du budget.
 
 ---
@@ -68,12 +68,12 @@ Taux réduit 2025 : 43,9 − 9,6 = **34,3 öre/kWh hors moms** — c'est un **ca
 ## 2. Moms (TVA) sur l'électricité
 
 ### 2.1 Taux : **25 %** (taux normal), appliqué sur l'elhandel, l'elnät **et** l'energiskatt
-- Skatteverket, « Momssatser och undantag från moms » — https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html
+- Skatteverket, « Momssatser och undantag från moms », https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html
   > « Det är 25 procent moms på nästan alla varor och tjänster, men i vissa fall är det 12 procent eller 6 procent som gäller. »
   (L'électricité ne figure ni dans la liste à 12 % ni dans celle à 6 %.)
-- Energimarknadsbyrån, « Kvartprisavtal » (uppdaterad 2026-04-28) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/valja-elavtal/olika-avtalstyper/kvartprisavtal/
+- Energimarknadsbyrån, « Kvartprisavtal » (uppdaterad 2026-04-28), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/valja-elavtal/olika-avtalstyper/kvartprisavtal/
   > « Till detta tillkommer också elhandlarens påslag och moms på 25 %. »
-- Energimarknadsbyrån, « Elräkningen » (uppdaterad 2026-05-22) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/
+- Energimarknadsbyrån, « Elräkningen » (uppdaterad 2026-05-22), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/
   > « Eftersom energiskatten är en punktskatt tillkommer moms även på den. »
 - Cohérence : 36 öre × 1,25 = 45 öre (chiffres Energimarknadsbyrån).
 
@@ -85,7 +85,7 @@ Taux réduit 2025 : 43,9 − 9,6 = **34,3 öre/kWh hors moms** — c'est un **ca
 
 ## 3. Elstöd / högkostnadsskydd
 
-### 3.1 Elstöd 2026 (consommation de janvier et février 2026) — **DÉCIDÉ ET VERSÉ**
+### 3.1 Elstöd 2026 (consommation de janvier et février 2026), **DÉCIDÉ ET VERSÉ**
 - Base légale : extra ändringsbudget prop. 2025/26:236 « Sänkt skatt på drivmedel samt el- och gasprisstöd ». Le Riksdag l'a adoptée le **22 avril 2026** (FiU48). Je n'ai pas relu moi-même la date dans le procès-verbal du Riksdag ; elle vient des résultats de recherche (riksdagen.se HD01FiU48).
 - Qui : **tous les ménages de Suède** ayant un contrat avec l'elnätsföretag **au 28 février 2026** ; pas de demande à faire ; versement par **Försäkringskassan** sur le compte enregistré au kontoregister de Swedbank.
 - Montants **forfaitaires par kWh consommé** (janvier + février 2026), plafond **10 000 kWh par logement** :
@@ -94,23 +94,23 @@ Taux réduit 2025 : 43,9 − 9,6 = **34,3 öre/kWh hors moms** — c'est un **ca
   - SE4 : **29 öre/kWh**
   - (Le texte ne dit pas si c'est avec ou sans moms. C'est une aide versée, pas un prix : la question ne se pose pas.)
 - Exemples officiels : villa SE1/SE2 7 900 kWh → environ 1 100 kr ; villa SE3 6 400 kWh → environ 1 660 kr ; villa SE4 6 400 kWh → environ 1 850 kr ; appartement 750 kWh → environ 105 kr (SE1/2), 195 kr (SE3), 217 kr (SE4).
-- Source principale : regeringen.se, « Frågor och svar om det tillfälliga el- och gasstödet » (Uppdaterad 02 juli 2026) — https://www.regeringen.se/regeringens-politik/energi/fragor-och-svar-om-det-tillfalliga-el--och-gasstodet/
+- Source principale : regeringen.se, « Frågor och svar om det tillfälliga el- och gasstödet » (Uppdaterad 02 juli 2026), https://www.regeringen.se/regeringens-politik/energi/fragor-och-svar-om-det-tillfalliga-el--och-gasstodet/
   > « Hushåll i elprisområde 1 och 2 får 14 öre/kWh » / « Hushåll i elprisområde 3 får 26 öre/kWh » / « Hushåll i elprisområde 4 får 29 öre/kWh »
   > « Elstödet betalas ut till hushåll som hade ett avtal med elnätsföretaget den 28 februari 2026. »
   > « Man kan få elstöd för en förbrukning upp till högst 10 000 kilowattimmar per bostad. »
   > « På samma sätt som för de tidigare el- och gasstöden kommer inte hushållen att behöva ansöka om stödet. »
   > « Försäkringskassan kommer att påbörja utbetalningarna av elstödet i början av juni 2026. De flesta hushållen kommer att få del av utbetalningarna innan midsommar. »
   > « Stödbeloppen utgör en viss andel, cirka 15–25 procent av genomsnittspriset på elbörsen, beroende på elområde och månad. »
-- Försäkringskassan, « Utbetalning av elstöd 2026 » (Senast uppdaterad 17 juli 2026) — https://www.forsakringskassan.se/privatperson/utbetalning-av-elstod-2026
+- Försäkringskassan, « Utbetalning av elstöd 2026 » (Senast uppdaterad 17 juli 2026), https://www.forsakringskassan.se/privatperson/utbetalning-av-elstod-2026
   > « Ersättningen baseras på hushållens elförbrukning i januari och februari 2026. Pengarna går till den som stod på elnätsavtalet den 28 februari 2026. »
   > « De allra flesta har fått sitt elstöd. »
   > « Vi gör utbetalning veckovis från slutet av augusti 2026. » (pour les dossiers complétés en retard)
 - Gas : aide équivalente au tarif SE4 (29 öre/kWh) pour les ménages chauffés au gaz du réseau ouest-suédois, versée à l'automne 2026 via les gasnätsföretag.
 - Remarque : Energimarknadsbyrån (page du 2026-04-09) annonçait des versements « under den andra halvan av juli » ; ce calendrier a été remplacé par celui de regeringen/Försäkringskassan (juin 2026). Publier le calendrier de Försäkringskassan.
 
-### 3.2 Högkostnadsskydd 2026 — **filet de sécurité annoncé, conditionnel**
+### 3.2 Högkostnadsskydd 2026, **filet de sécurité annoncé, conditionnel**
 - Principe : si le **prix spot moyen mensuel** d'un elområde **dépasse 1,50 kr/kWh**, une aide aux ménages est prévue pour les mois restants de 2026. Budget : 1 000 000 000 kr pour 2026. Montant prévu pour 2027 dans BP 2026 : **0** (« 2027 Beräknat 0 »).
-- Budgetpropositionen för 2026, UO 21 (prop. 2025/26:1) — https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/budgetpropositionen-for-2026-utgiftsomrade-21_hd031d23/html/
+- Budgetpropositionen för 2026, UO 21 (prop. 2025/26:1), https://www.riksdagen.se/sv/dokument-och-lagar/dokument/proposition/budgetpropositionen-for-2026-utgiftsomrade-21_hd031d23/html/
   > « Regeringen avser att införa ett högkostnadsskydd om månadsmedelvärdet för spotpriset på el överstiger 1,5 kronor per kilowattimme inom ett elprisområde i Sverige. […] Till anslaget tillförs därför 1 000 000 000 kronor 2026 som ska användas vid behov av ett energistöd till hushåll. »
   > « […] beredskap för att kunna införa ett högkostnadsskydd för hushållen i händelse av en längre period med höga el- och gaspriser från november 2025 och hela 2026 […] »
 - regeringen.se Q&A (cité plus haut) : « Därtill ligger högkostnadsskyddet för el kvar under hela 2026. Skyddet gäller om det genomsnittliga spotpriset på el under en kalendermånad överstiger 1,50 kronor per kWh inom ett elområde. »
@@ -120,18 +120,18 @@ Taux réduit 2025 : 43,9 − 9,6 = **34,3 öre/kWh hors moms** — c'est un **ca
 Aucune aide pour l'hiver 2026–2027 n'a été trouvée sur regeringen.se, riksdagen.se, Försäkringskassan ou Energimarknadsbyrån. Le högkostnadsskydd ne court que sur 2026 (« hela 2026 ») et BP 2026 prévoit 0 kr en 2027. Le budget 2027 n'est pas déposé. → Écrire « aucune aide décidée pour 2027 à ce jour ».
 
 ### 3.4 Elstöd historiques 2021–2023 (Försäkringskassan)
-Force­säkringskassan, « Elstöd för 2021–2022 » (Senast uppdaterad 20 maj 2026) — https://www.forsakringskassan.se/privatperson/utbetalning-av-elstod-2026/elstod-for-2021-2022
-- **Elstöd n° 1** — sud de la Suède (SE3 et SE4) : consommation du **1er oct. 2021 au 30 sept. 2022** ; bénéficiaire = titulaire du contrat réseau au **17 nov. 2022**.
+Force­säkringskassan, « Elstöd för 2021–2022 » (Senast uppdaterad 20 maj 2026), https://www.forsakringskassan.se/privatperson/utbetalning-av-elstod-2026/elstod-for-2021-2022
+- **Elstöd n° 1**, sud de la Suède (SE3 et SE4) : consommation du **1er oct. 2021 au 30 sept. 2022** ; bénéficiaire = titulaire du contrat réseau au **17 nov. 2022**.
   > « Elstöd till privatpersoner i södra halvan av Sverige. Stödet gällde elförbrukningen under perioden 1 oktober 2021–30 september 2022. Den som stod på elnätsavtalet den 17 november 2022 fick pengarna. »
-- **Elstöd n° 2** — toute la Suède : consommation du **1er nov. au 31 déc. 2022** ; contrat au **31 déc. 2022** ; couvrait **80 %** de la consommation jusqu'à **18 000 kWh**.
+- **Elstöd n° 2**, toute la Suède : consommation du **1er nov. au 31 déc. 2022** ; contrat au **31 déc. 2022** ; couvrait **80 %** de la consommation jusqu'à **18 000 kWh**.
   > « Elstöd till privatpersoner i hela Sverige. Stödet gällde elförbrukningen under perioden 1 november–31 december 2022. Den som stod på elnätsavtalet den 31 december 2022 fick pengarna. Stödet täckte 80 procent av den elförbrukning som inte översteg 18 000 kilowattimmar. »
 - Fin : « Förordningarna om elstöd till privatpersoner upphörde att gälla vid utgången av 2023. »
 - Les montants en kr/öre des aides 2022–2023 (barème par zone et par mois) n'ont **pas** été vérifiés → **NON CONFIRMÉ**.
 
 ---
 
-## 4. Skattereduktion för mikroproduktion av förnybar el (60 öre/kWh) — **SUPPRIMÉE au 1er janvier 2026 (confirmé)**
-Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket.se/privat/fastigheterochbostad/inkomsterfranbostad/mikroproduktionavfornybarelprivatbostad.4.12815e4f14a62bc048f41a7.html
+## 4. Skattereduktion för mikroproduktion av förnybar el (60 öre/kWh), **SUPPRIMÉE au 1er janvier 2026 (confirmé)**
+Skatteverket, « Mikroproduktion av förnybar el », https://www.skatteverket.se/privat/fastigheterochbostad/inkomsterfranbostad/mikroproduktionavfornybarelprivatbostad.4.12815e4f14a62bc048f41a7.html
 > « Riksdagen har beslutat att skattereduktionen för mikroproduktion av förnybar el försvinner från och med 1 januari 2026 (deklarationen 2027). »
 > « Fram till och med 31 december 2025 har du rätt till skattereduktion för det antal kilowattimmar som du har matat in på elnätet […] Från och med 1 januari 2026 får du ingen skattereduktion för den el du matar in på elnätet. »
 - Ancienne règle (pour la production jusqu'au 31/12/2025) : 60 öre/kWh injecté, base plafonnée à la consommation soutirée et à 30 000 kWh, maximum 18 000 kr/an : « den högsta skattereduktionen du kan få 18 000 kronor per år (30 000 kilowattimmar × 60 öre = 18 000 kronor) ».
@@ -139,17 +139,17 @@ Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket
 
 ---
 
-## 5. Elcertifikat en 2026 — **le système fonctionne toujours, il y a encore un coût (faible) sur les factures**
+## 5. Elcertifikat en 2026, **le système fonctionne toujours, il y a encore un coût (faible) sur les factures**
 - Energimarknadsbyrån, « Elräkningen » (uppdaterad 2026-05-22) :
   > « En del av kostnaden kan också bestå av en elcertifikatsavgift. […] Systemet började tillämpas 2003 och ska pågå till 2035. »
   > « Elhandelsföretagen är skyldiga att köpa elcertifikat i förhållande till sina kunders förbrukning, men företagen bestämmer själva hur stor avgiften är och hur den tas ut. »
-- Energimyndigheten, « Elkundens bidrag till förnybar elproduktion » — https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/elkundens-bidrag-till-fornybar-elproduktion/
+- Energimyndigheten, « Elkundens bidrag till förnybar elproduktion », https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/elkundens-bidrag-till-fornybar-elproduktion/
   > « I ditt elpris ingår en kostnad för elcertifikat. […] År 2023 var den genomsnittliga kostnaden 0,2 öre per kilowattimme. »
   (Coût moyen 2024–2026 : **NON CONFIRMÉ**, la page s'arrête à 2023.)
-- Le kvotplikt existe encore : les certificats de 2025 ont été annulés le 1er avril 2026, et la loi a été modifiée au 1er janvier 2026 (seuil de kvotplikt relevé de 60 à 1 200 MWh, nouvelles redevances). Page « Ändrade regler om elcertifikat » — https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/lag-och-ratt/andrade-regler-om-elcertifikat/
+- Le kvotplikt existe encore : les certificats de 2025 ont été annulés le 1er avril 2026, et la loi a été modifiée au 1er janvier 2026 (seuil de kvotplikt relevé de 60 à 1 200 MWh, nouvelles redevances). Page « Ändrade regler om elcertifikat », https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/lag-och-ratt/andrade-regler-om-elcertifikat/
   > « Den 1 januari 2026 infördes ändringar i lagen (2011:1200) och förordningen (2011:1480) om elcertifikat avseende kvotplikt och avgifter. »
-- Quota (kvot) 2026 publiée : **33,3 %** (page « Kvotnivåer », senast uppdaterad 2026-02-04 — https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/kvotnivaer/). La page prévient : « Kvoterna i nedanstående tabell kommer att uppdateras när regeringen har beslutat om nya kvoter i förordningen. » Chiffre à utiliser avec prudence.
-- **Fin anticipée en préparation, pas décidée** : nyhet Energimyndigheten du 2026-06-25 — https://www.energimyndigheten.se/nyhetsarkiv/2026/energimyndigheten-ska-mojliggora-ett-tidigare-avslut-av-elcertifikatsystemet/
+- Quota (kvot) 2026 publiée : **33,3 %** (page « Kvotnivåer », senast uppdaterad 2026-02-04, https://www.energimyndigheten.se/energisystem-och-analys/styrmedel-for-produktion-av-el-gas-varme-och-kyla/elcertifikatsystemet/om-elcertifikatsystemet/kvotnivaer/). La page prévient : « Kvoterna i nedanstående tabell kommer att uppdateras när regeringen har beslutat om nya kvoter i förordningen. » Chiffre à utiliser avec prudence.
+- **Fin anticipée en préparation, pas décidée** : nyhet Energimyndigheten du 2026-06-25, https://www.energimyndigheten.se/nyhetsarkiv/2026/energimyndigheten-ska-mojliggora-ett-tidigare-avslut-av-elcertifikatsystemet/
   > « Energimyndigheten har därför fått i uppdrag att föreslå konkreta ändringar för att kunna avsluta elcertifikatsystemet redan 2029, i stället för 2035. »
   > « Uppdraget om att möjliggöra ett tidigare avslut av elcertifikatsystemet ska redovisas senast 16 november 2026. »
 - Formule à publier : « En 2026, le système des elcertifikat existe toujours (fin légale prévue en 2035, une fin en 2029 est à l'étude). Le coût est inclus dans le prix du fournisseur et reste faible (0,2 öre/kWh en moyenne en 2023 selon Energimyndigheten). »
@@ -159,16 +159,16 @@ Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket
 ## 6. Prix au quart d'heure et horaire de publication
 
 ### 6.1 Passage aux prix au quart d'heure (15 min) sur le marché day-ahead : **1er octobre 2025**
-- Energimarknadsbyrån, nyhet « Idag kan ditt timavtal gå över till ett kvartprisavtal » (archive 2025, uppdaterad 2025-10-02) — https://www.energimarknadsbyran.se/nyheter/nyhetsarkiv/2025/idag-kan-ditt-timavtal-ga-over-till-ett-kvartprisavtal/
+- Energimarknadsbyrån, nyhet « Idag kan ditt timavtal gå över till ett kvartprisavtal » (archive 2025, uppdaterad 2025-10-02), https://www.energimarknadsbyran.se/nyheter/nyhetsarkiv/2025/idag-kan-ditt-timavtal-ga-over-till-ett-kvartprisavtal/
   > « Från och med 1 oktober börjar elpriset sättas på kvart istället för per timme. »
   > « Elbörserna i Norden går idag över till att handla el i 15-minutersintervaller. Det betyder att elpriset nu uppdateras fyra gånger per timme istället för en gång per timme. »
   > « Du som har ett fast eller rörligt elprisavtal kommer inte att märka någon skillnad. »
-- Svenska kraftnät, « 15 minuters tidsupplösning » — https://www.svk.se/utveckling-av-kraftsystemet/systemansvar--elmarknad/ny-nordisk-balanseringsmodell-nbm/15-minuters-tidsupplosning/
+- Svenska kraftnät, « 15 minuters tidsupplösning », https://www.svk.se/utveckling-av-kraftsystemet/systemansvar--elmarknad/ny-nordisk-balanseringsmodell-nbm/15-minuters-tidsupplosning/
   > « Nu är 15 minuters tidsupplösning införd på såväl Dagen före-marknaden för el, liksom för intradagmarknaden. Även balanseringen av elsystemet sker varje kvart. »
   (svk.se ne donne pas la date elle-même ; la date du 1er octobre 2025 vient d'Energimarknadsbyrån.)
 
 ### 6.2 Heure de l'enchère / publication
-- Svenska kraftnät, « Dagen före-marknaden – fysisk handel med el » — https://www.svk.se/om-kraftsystemet/om-elmarknaden/dagen-fore-marknaden--fysisk-handel-med-el/
+- Svenska kraftnät, « Dagen före-marknaden – fysisk handel med el », https://www.svk.se/om-kraftsystemet/om-elmarknaden/dagen-fore-marknaden--fysisk-handel-med-el/
   > « Handeln genomförs klockan 12 dagen före leveransdag med en auktion där alla köp- och säljbud matchas. »
   > « Köpare och säljare anger vilken mängd el de vill köpa respektive sälja varje kvart mellan klockan 00 och 24 under det kommande dygnet […] »
   > « I Sverige heter elområdena SE1, SE2, SE3 och SE4 och är numrerade från norr till söder. »
@@ -178,17 +178,17 @@ Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket
 
 ## 7. Elområden SE1–SE4
 
-- Svenska kraftnät, « Elområden » — https://www.svk.se/om-kraftsystemet/om-elmarknaden/elomraden/
+- Svenska kraftnät, « Elområden », https://www.svk.se/om-kraftsystemet/om-elmarknaden/elomraden/
   > « Sverige har fyra elområden. Den indelningen behövs för att kunna transportera el från norr till söder utan allvarliga driftstörningar eller skador på teknisk utrustning. »
   > « Gränserna mellan elområdena går där det finns struktruella flaskhalsar […] » (sic, coquille dans l'original)
   > « Sverige delades in i elområden 2011. »
   > Révision en cours : « Den 15 maj 2025 fick Svenska kraftnät i uppdrag av regeringen att analysera förutsättningarna för att ändra Sveriges elområdesindelning. Uppdraget utökades i maj 2026 […] Det utökade uppdraget ska redovisas till klimat- och näringslivsdepartementet senast 29 januari 2027. »
-- svk « Vad är ett elområde? » — https://www.svk.se/om-kraftsystemet/om-elmarknaden/elomraden/fragor-och-svar-om-elomraden/fragor-och-svar-elomraden/vad-ar-ett-elomrade/
+- svk « Vad är ett elområde? », https://www.svk.se/om-kraftsystemet/om-elmarknaden/elomraden/fragor-och-svar-om-elomraden/fragor-och-svar-elomraden/vad-ar-ett-elomrade/
   > « Inom ett elområde är priset på el alltid detsamma och priset baseras på utbud och efterfrågan samt på överföringskapaciteten mellan elområden. »
-- Ei, « Elområden » — https://ei.se/konsument/el/elmarknaden/elomraden
+- Ei, « Elområden », https://ei.se/konsument/el/elmarknaden/elomraden
   > « I Sverige har vi fyra elområden med SE1 i norr och SE4 i söder. »
   > Révision européenne : « För Sveriges del föreslogs inga förändringar av nuvarande elområdesindelning. » (avril 2025)
-- **Outil officiel pour trouver son elområde** : **Nätområden.se** — https://www.natomraden.se/ (Ei y renvoie et l'attribue à svk.se)
+- **Outil officiel pour trouver son elområde** : **Nätområden.se**, https://www.natomraden.se/ (Ei y renvoie et l'attribue à svk.se)
   - Ei : « På nätområden.se kan du ta reda på vilket elområde du tillhör (svk.se) »
   - Energimarknadsbyrån (uppdaterad 2026-01-28, https://www.energimarknadsbyran.se/el/elmarknaden/elomraden/vilket-elomrade-tillhor-du/) : « För att se vilket elområde din elanläggning tillhör (SE1, SE2, SE3 eller SE4) så kan du använda Svenska Kraftnäts karta över elområdena i Sverige. »
   - Le site lui-même : « avgöra vilket elområde ett lokalnät tillhör ».
@@ -199,7 +199,7 @@ Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket
 
 ## 8. Composition de la facture et effektavgift
 
-### 8.1 Composition (Energimarknadsbyrån, « Elräkningen », uppdaterad 2026-05-22) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/
+### 8.1 Composition (Energimarknadsbyrån, « Elräkningen », uppdaterad 2026-05-22), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/fakturering-och-betalning/elrakningen/
 - Deux parties : elhandel + elnät.
   > « Din elräkning består av två delar: elhandel och elnät. » / « Din totala kostnad består av elpris, nätavgifter, skatter och moms. »
 - **Elhandel** : le prix de l'électricité selon le contrat, plus souvent une redevance fixe annuelle, plus moms (et éventuellement des frais d'elcertifikat).
@@ -214,13 +214,13 @@ Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket
   - Ei (page statistique nätavgifter) : « Myndighetsavgifterna år 2025 var 105,45 kr/år för lågspänning […] Myndighetsavgifterna år 2026 är 139,89 kr/år för lågspänning […] » et « Den 29 januari 2026 beslutades det att myndighetsavgifterna skulle ändras från och med den 1 januari 2026. »
 - Facturation : « Elleverantörer och elnätsföretag får inte kräva fakturaavgift eller avgift för fakturaunderlag. »
 
-### 8.2 Effektavgift / effekttariffer — **obligation 2027 SUPPRIMÉE (EIFS 2022:1 abrogé en juin 2026)**
-- Ei, « Effektavgifter » — https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter
+### 8.2 Effektavgift / effekttariffer, **obligation 2027 SUPPRIMÉE (EIFS 2022:1 abrogé en juin 2026)**
+- Ei, « Effektavgifter », https://ei.se/konsument/el/elnatsavgiften-och-elnatsreglering/effektavgifter
   > « Ei fick i mars 2026 i uppdrag av regeringen att upphäva föreskrifterna som kräver att alla elnätsföretag ska införa effektavgifter och ta fram förslag till en ny modell för utformning av effektavgifter. Föreskrifterna upphävdes i juni 2026 vilket betyder att det inte längre finns något krav på att elnätsföretag ska införa effektavgifter. Det finns dock inget i lagstiftningen som säger att effektavgifter är otillåtna. »
   > « Ei ska lämna in förslaget om ny utformning av effektavgifter till regeringen senast den 12 april 2027. »
-- Ei, nyhet du 2026-03-13 — https://ei.se/om-oss/nyheter/2026/2026-03-13-ei-har-fatt-i-uppdrag-att-ta-fram-en-ny-modell-for-effektavgifter-och-upphava-befintliga-foreskrifter
+- Ei, nyhet du 2026-03-13, https://ei.se/om-oss/nyheter/2026/2026-03-13-ei-har-fatt-i-uppdrag-att-ta-fram-en-ny-modell-for-effektavgifter-och-upphava-befintliga-foreskrifter
   > « […] regeringen Ei i uppdrag att senast den 30 juni i år upphäva föreskrifterna som kräver att elnätsföretagen ska införa effektavgifter senast den 1 januari 2027 (EIFS 2022:1). »
-- Energimarknadsbyrån, « Nya besked om effekttariffer » (uppdaterad 2026-03-20) — https://www.energimarknadsbyran.se/nyheter/nyhetsarkiv/2026/nya-besked-om-effekttariffer-sa-paverkas-du-som-kund/
+- Energimarknadsbyrån, « Nya besked om effekttariffer » (uppdaterad 2026-03-20), https://www.energimarknadsbyran.se/nyheter/nyhetsarkiv/2026/nya-besked-om-effekttariffer-sa-paverkas-du-som-kund/
   > « För dig som kund betyder det att effekttariffer inte längre kommer att införas generellt från 2027. Däremot kan ditt elnätsföretag välja att fortsätta använda effekttariffer […] »
 - Statut au 2026-10-12 : il n'y a plus d'obligation. Chaque nätföretag décide lui-même (dans le cadre de l'ellagen et de l'article 18 du règlement européen sur le marché de l'électricité). Ei doit proposer un nouveau modèle au plus tard le 12 avril 2027.
 - ⚠️ La page Energimarknadsbyrån « Så påverkar effekttariffer din elnätskostnad » (uppdaterad 2026-03-16) contient encore une phrase **périmée** : « Elnätsföretagens tariffer ska från och med 1 januari 2027 bestå av fyra komponenter […] ». Ne pas la reprendre.
@@ -238,14 +238,14 @@ Skatteverket, « Mikroproduktion av förnybar el » — https://www.skatteverket
 | Hushållsel (électricité domestique hors chauffage) d'un småhus | **environ 6 700** (Energimyndigheten, via EMB) | EMB förbrukning |
 | Hushållsel d'un appartement | 2 000 à 4 000 | EMB förbrukning |
 
-- Lägenhet (uppdaterad 2026-04-15) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/elforbrukning/normal-elforbrukning-och-elkostnad-for-lagenhet/
+- Lägenhet (uppdaterad 2026-04-15), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/elforbrukning/normal-elforbrukning-och-elkostnad-for-lagenhet/
   > « En normal årlig energiförbrukning för en mindre lägenhet, som en etta eller en mindre tvåa är i genomsnitt 2000 kWh per år och för en större bostad är förbrukningen i genomsnitt 5000 kWh per år. »
   > Coût 2025 (SCB, tout compris) : « År 2025 var elkostnaden i genomsnitt 337 öre per kWh för en mindre lägenhet […] För större lägenheter uppgick den genomsnittliga kostnaden till 296 öre per kWh. » (Plus bas sur la même page, elle écrit 297 öre : incohérence interne.)
-- Villa (uppdaterad 2026-04-15) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/elforbrukning/normal-elforbrukning-och-elkostnad-for-villa/
+- Villa (uppdaterad 2026-04-15), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elhandelsavtalet/elforbrukning/normal-elforbrukning-och-elkostnad-for-villa/
   > « En genomsnittlig villa i Sverige förbrukar ungefär 20 000 kWh per år. »
   > « Om villan värms med fjärrvärme, eller om uppvärmning och varmvatten inte sker med el, är den normala årliga elförbrukningen betydligt lägre – ofta omkring 5 000 kWh per år. »
   > Coût 2025 (SCB) : « cirka 206 öre per kWh för hushåll med en årlig elanvändning som översteg 15 000 kWh » → environ 41 200 kr/an pour 20 000 kWh.
-- Förbrukning (uppdaterad 2026-08-10) — https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elnatsavtalet/natavgifter/elmatare-och-elforbrukning/forbrukning/
+- Förbrukning (uppdaterad 2026-08-10), https://www.energimarknadsbyran.se/el/dina-elavtal-och-kostnader/elnatsavtalet/natavgifter/elmatare-och-elforbrukning/forbrukning/
   > « I en lägenhet ligger förbrukningen av hushållsel ofta mellan 2 000 och 4 000 kWh per år. »
   > « Enligt statistik från Energimyndigheten är den genomsnittliga förbrukningen av hushållsel i småhus cirka 6 700 kWh per år. »
   > « Förbrukningen av hushållsel i en liten lägenhet är ofta mindre än 10 kWh per dygn. I större lägenheter eller småhus kan hushållselen uppgå till mer än 20 kWh per dygn. Elvärmda småhus har vintertid ofta en förbrukning på cirka 100-150 kWh per dygn eller mer. »
@@ -273,11 +273,11 @@ Méthode de calcul (Energimarknadsbyrån, page Förbrukning) : « Om en apparat 
 ---
 
 ## 11. Niveau des elnätsavgifter (statistique Ei)
-- Ei publie chaque année les tarifs déclarés par chaque nätföretag (fichier Excel, années 1999–2026), mais **ne publie pas de moyenne nationale** sur la page. Page : « Nätavgifter – elnät » — https://ei.se/om-oss/statistik-och-oppna-data/natavgifter---elnat
+- Ei publie chaque année les tarifs déclarés par chaque nätföretag (fichier Excel, années 1999–2026), mais **ne publie pas de moyenne nationale** sur la page. Page : « Nätavgifter – elnät », https://ei.se/om-oss/statistik-och-oppna-data/natavgifter---elnat
   > « Varje år rapporterar elnätsföretagen i hela landet in uppgifter om sina elnätsavgifter (nättariffer) till myndigheten som vi sammanställer och publicerar. »
   > « För en villa med elvärme är fördelningen mellan avgiftens fasta och rörliga del ungefär lika. »
   > Avertissement 2026 : « Flera företag hann rapportera in avgifterna innan detta beslutades. Det innebär att vissa företag rapporterat gamla myndighetsavgifter medan andra har rapporterat nya. »
-- Fichier lu : « Hushållskunder 1999-2026 » — https://ei.se/download/18.6586000219eb48404e7ac7/1781185169892/Hush%C3%A5llskunder.xlsx
+- Fichier lu : « Hushållskunder 1999-2026 », https://ei.se/download/18.6586000219eb48404e7ac7/1781185169892/Hush%C3%A5llskunder.xlsx
 - **Mon calcul** (ce n'est **pas** un chiffre publié par Ei) : moyenne simple et médiane des lignes de tarif déclarées, **hors moms, sans energiskatt**, en kr/an. Chaque tarif compte pour un, sans pondération par le nombre de clients :
 
 | Type de client Ei | 2025 moyenne / médiane | 2026 moyenne / médiane (min–max 2026) | n 2026 |

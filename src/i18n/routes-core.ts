@@ -4,7 +4,7 @@
  * Une locale peut être partielle. Un site qui ouvre une deuxième langue ne
  * traduit pas ses quatre-vingts pages le même jour : la table accepte donc
  * qu'une route n'existe que dans certaines langues, et tout ce qui en découle
- * s'aligne — le hreflang ne pointe que vers des pages qui existent, le
+ * s'aligne, le hreflang ne pointe que vers des pages qui existent, le
  * sélecteur de langue ne propose que ce qui est traduit, et le sitemap
  * n'annonce rien d'absent.
  *

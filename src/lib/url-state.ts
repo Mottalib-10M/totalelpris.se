@@ -1,6 +1,6 @@
 /** État du calculateur encodé dans l'URL (lien partageable). Aucune donnée n'est transmise à un serveur.
  *
- * RÈGLE D’HYDRATATION (RECETTE-SITE.md §17.4) — ne jamais lire l’URL ni la date du jour pendant le
+ * RÈGLE D’HYDRATATION (RECETTE-SITE.md §17.4), ne jamais lire l’URL ni la date du jour pendant le
  * premier rendu d’un calculateur : le HTML servi a été calculé au build avec les valeurs par défaut, et
  * React signale une erreur (#418) dès que le premier rendu du navigateur diffère. Le schéma :
  *   const sp = new URLSearchParams();                       // premier rendu = valeurs par défaut

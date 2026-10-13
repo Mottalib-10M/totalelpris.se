@@ -85,7 +85,7 @@ for (const p of pages) {
         expect(x.title.length, x.title).toBeGreaterThanOrEqual(50); expect(x.title.length, x.title).toBeLessThanOrEqual(60);
         expect(x.description.length, x.description).toBeGreaterThanOrEqual(150); expect(x.description.length, x.description).toBeLessThanOrEqual(160);
         expect(x.title).toMatch(/2026/); expect(x.description).toMatch(/2026/);
-        for (const s of [x.title, x.description, x.h1, x.intro, x.resume(spy(l).h)]) expect(s).not.toMatch(/—/);
+        for (const s of [x.title, x.description, x.h1, x.intro, x.resume(spy(l).h)]) expect(s).not.toMatch(/\u2014/);
       });
       it(`${l} : bloc citable ≥ 120 mots, FAQ 4 à 8 questions de 40 à 90 mots`, () => {
         const x = p[l];
@@ -99,7 +99,7 @@ for (const p of pages) {
         const body = p[l].body(h);
         for (const id of links) expect(ids.has(id), `lien vers une page inconnue : ${id}`).toBe(true);
         for (const s of srcs) expect(P.sources[s as keyof typeof P.sources]).toBeTruthy();
-        expect(body).not.toMatch(/—|&mdash;/);
+        expect(body).not.toMatch(/\u2014|&m(?:dash);/);
         for (const m of body.matchAll(/<!--mini:([A-Za-z0-9_]+)-->/g)) expect(MINIS[m[1]], `mini ${m[1]} absent`).toBeTruthy();
         const total = words(body) + words(p[l].resume(h)) + p[l].faqs(h).reduce((s, f) => s + words(f.q) + words(f.a), 0);
         expect(total, 'longueur').toBeGreaterThanOrEqual(p.tool ? 450 : 1100);

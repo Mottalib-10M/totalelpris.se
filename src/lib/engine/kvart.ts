@@ -9,7 +9,7 @@ const TID = /\b\d{1,2}[:.]\d{2}(?:[:.]\d{2})?\b/g;
 const DATUM = /\b\d{4}-\d{2}-\d{2}(?:T[\d:+.Z-]*)?\b/g;
 /** Premier nombre d'une ligne, une fois heures et dates retirées : « 00:15–00:30 42,1 öre » → 42,1. */
 function talPaRad(rad: string): number | null {
-  const ren = rad.replace(DATUM, ' ').replace(TID, ' ').replace(/[–—]/g, ' ');
+  const ren = rad.replace(DATUM, ' ').replace(TID, ' ').replace(/[\u2013\u2014]/g, ' ');
   const m = ren.match(/-?\d+(?:[.,]\d+)?/);
   if (!m) return null;
   const n = Number(m[0].replace(',', '.'));

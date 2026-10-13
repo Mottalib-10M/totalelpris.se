@@ -115,7 +115,7 @@ Outils `h` : `h.a(id, texte)`, `h.kr(n, d?)`, `h.ore(n, d?)` (« 86,9 öre/kWh �
   (elhandel, elnät, överföringsavgift, fast avgift, säkring, påslag, rörligt, kvartspris, elområde).
 - **Anglais** : pour un expatrié en Suède, chaque terme suédois expliqué à sa première apparition (elnätsföretag,
   överföringsavgift, anvisat avtal, BankID si utile) ; montants en kronor et öre. Pas une traduction mot à mot.
-- **Interdits** : tiret cadratin « — », « det är viktigt att notera », « it's important to note », « dive into »,
+- **Interdits** : tiret cadratin «, », « det är viktigt att notera », « it's important to note », « dive into »,
   « whether you're… », triplets systématiques, conclusions-résumés, émojis, liens vers des sites non officiels.
 - **Unicité** (§6) : `check-unique` compare toutes les pages d'une langue (seuil 30 %, chiffres neutralisés, tableaux
   retirés, fenêtre de 12 000 caractères en tête). Les pages d'une même famille (villes, zones, appareils) doivent
