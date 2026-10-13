@@ -46,25 +46,25 @@ export interface LegalIdentity {
   supervisoryAuthority: string; supervisoryAuthorityUrl: string; hosting: LegalHosting;
 }
 export const LEGAL: LegalIdentity = {
-  entityName: '',            // raison sociale ou nom commercial exploité
-  legalForm: '',             // ex. entreprise individuelle, SASU, GmbH, eenmanszaak
-  street: '',
-  postalCode: '',
-  city: '',
+  entityName: 'Radif Partners',  // éditeur de tous les sites du portefeuille (RECETTE §8)
+  legalForm: '',
+  street: '49 rue du Ressort',
+  postalCode: '63000',
+  city: 'Clermont-Ferrand',
   country: "France",
   phone: '',                 // ligne de contact publiée
   registerLabel: "SIREN",
   registerNumber: '',
-  vatLabel: "VAT",
+  vatLabel: "TVA",
   vatNumber: '',             // laisser vide si non assujetti
   jurisdiction: "France",
   supervisoryAuthority: "Commission nationale de l'informatique et des libertés (CNIL)",
   supervisoryAuthorityUrl: "https://www.cnil.fr",
-  hosting: { name: '', address: '', phone: '', url: '' },
+  hosting: { name: 'GitHub, Inc. (GitHub Pages)', address: '88 Colin P Kelly Jr Street, San Francisco, CA 94107, United States', phone: '', url: 'https://pages.github.com' },
 };
 
 /** Champs sans lesquels le site ne doit pas être mis en ligne. */
-export const LEGAL_REQUIRED: Array<keyof LegalIdentity> = ['entityName', 'legalForm', 'street', 'postalCode', 'city'];
+export const LEGAL_REQUIRED: Array<keyof LegalIdentity> = ['entityName', 'street', 'postalCode', 'city'];
 
 /** Profils publics de l'auteur (schema.org sameAs). Laisser vide si aucun. */
 export const AUTHOR_SAME_AS: string[] = [];

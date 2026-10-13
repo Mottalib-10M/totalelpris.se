@@ -429,13 +429,6 @@
     "sv": "ENTSO-E Transparency Platform: day-ahead-priser per elområde (visning)",
     "en": "ENTSO-E Transparency Platform: day-ahead prices per bidding zone (viewing)"
    }
-  },
-  "entsoeReuse": {
-   "url": "https://transparency.entsoe.eu/content/static_content/Static%20content/terms%20and%20conditions/terms%20and%20conditions.html",
-   "label": {
-    "sv": "ENTSO-E: Terms and conditions och List of data available for free re-use",
-    "en": "ENTSO-E: terms and conditions and list of data available for free re-use"
-   }
   }
  }
 }
