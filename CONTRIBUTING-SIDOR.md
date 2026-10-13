@@ -152,4 +152,4 @@ Serveur local : port **4448** (`npx astro preview --port 4448`). Arrêt : `lsof 
 - Chaque année (fichier Ei publié au printemps) : nouveau xlsx dans `research/ei-natavgifter/`, `build-ei.py`,
   `params-2027.json` (energiskatt 2027 : la loi l'indexe, une promemoria de mars 2026 propose 36,0 öre ; à relire
   après le vote du budget), tests.
-- Domaine définitif : l'URL `https://se-elpris.example` est provisoire (`astro.config.mjs`, `site-config.ts`).
+- Domaine définitif : l'URL `https://totalelpris.se` est provisoire (`astro.config.mjs`, `site-config.ts`).

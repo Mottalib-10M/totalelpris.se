@@ -1,5 +1,5 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://se-elpris.example";
+export const SITE_URL = "https://totalelpris.se";
 export const SITE_NAMES: Record<string, string> = {"sv": "Elpriskollen", "en": "Elpriskollen"};
 export const LANG_TAGS: Record<string, string> = {"sv": "sv-SE", "en": "en-SE"};
 export const OG_LOCALES: Record<string, string> = {"sv": "sv_SE", "en": "en_GB"};
@@ -18,7 +18,7 @@ export const AUTHOR_DESC: Record<string, string> = {"sv": "Radif Partners ger ut
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"sv": ["Elpriset i elområde SE1, SE2, SE3 och SE4", "Energiskatt och moms på el", "Elnätsavgifter och effektavgifter hos svenska nätföretag", "Rörligt, fast och timprisavtal", "Elkostnad för apparater och laddning av elbil"], "en": ["Electricity prices in Swedish bidding zones SE1 to SE4", "Energy tax and VAT on electricity in Sweden", "Grid fees and power tariffs of Swedish network companies", "Variable, fixed and hourly electricity contracts", "Running costs of appliances and electric-car charging"]};
-export const CONTACT_EMAIL = "kontakt@se-elpris.example";
+export const CONTACT_EMAIL = "kontakt@totalelpris.se";
 export const THEME_COLOR = '#006AA7';
 export const LOGO_SYMBOL = 'eclair';
 export const BING_VERIFY_CODE = '';

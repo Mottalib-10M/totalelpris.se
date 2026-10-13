@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /*?*
 
-Sitemap: https://se-elpris.example/sitemap-index.xml
+Sitemap: https://totalelpris.se/sitemap-index.xml
