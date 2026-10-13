@@ -1,13 +1,20 @@
 {
  "accent": "#006AA7",
- "symbol": "eclair",
+ "symbol": "kWh",
  "variants": [
   {
    "file": "og-sv.png",
-   "title": "Elpris idag",
-   "subtitle": "",
+   "title": "Elpris idag med skatt och nätavgift",
+   "subtitle": "Totalpris per kWh i SE1–SE4",
    "badge": "2026",
-   "brand": "Elpris idag"
+   "brand": "Elpriskollen"
+  },
+  {
+   "file": "og-en.png",
+   "title": "Electricity price today, all-in",
+   "subtitle": "Price per kWh in SE1–SE4",
+   "badge": "2026",
+   "brand": "Elpriskollen"
   }
  ]
 }

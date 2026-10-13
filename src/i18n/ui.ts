@@ -12,7 +12,7 @@ const en: typeof sv = {
   skipToContent: 'Skip to content', mainNav: 'Main menu', breadcrumbLabel: 'Breadcrumb', breadcrumbHome: 'Home', menuOpen: 'Open menu',
   faqTitle: 'Frequently asked questions', relatedCalculators: 'Related pages and calculators', sourcesTitle: 'Sources', writtenBy: 'Written by',
   asOf: 'Amounts and rules', lastUpdated: 'checked', footerValidated: 'Sources: Swedish Tax Agency (energy tax), Statistics Sweden (electricity prices and contracts), Swedish Energy Markets Inspectorate, network companies’ price lists', footerBrowser: 'Calculated entirely in your browser · no data sent · free',
-  footerDisclaimer: 'Independent website published by Radif Partners, with no link to any electricity retailer, grid company, Nord Pool or public authority. Figures are estimates built from published tax rates and price lists and the prices you enter yourself; your bills from the retailer and the grid company are what count. No contracts sold, no referrals.', footerPopular: '', notFound: 'This page does not exist.',
+  footerDisclaimer: 'Independent website published by Radif Partners, with no link to any electricity retailer, grid company, Nord Pool or public authority. Figures are estimates only, built from published tax rates and price lists and the prices you enter yourself; your bills from the retailer and the grid company are what count. No contracts sold, no referrals.', footerPopular: '', notFound: 'This page does not exist.',
   readMore: 'Read more',
 };
 export function t(lang: Locale) { return lang === 'en' ? en : sv; }

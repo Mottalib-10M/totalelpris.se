@@ -24,7 +24,7 @@ const H = helpers(lang);
 const path = route('home', lang);
 const resume = x.resume(H);
 const faqs = x.faqs(H);
-const keys: SourceKey[] = ['lse', 'skvEl', 'skvMoms', 'eiNat', 'scbElpriser', 'svkElomraden', 'natomraden', 'embElrakning', 'entsoe'];
+const keys: SourceKey[] = ['lse', 'skvEl', 'skvSankt2026', 'skvMoms', 'eiNat', 'scbElpriser', 'svkElomraden', 'natomraden', 'embElrakning', 'entsoe'];
 const sources = keys.map((k) => ({ name: P.sources[k].label[lang], url: P.sources[k].url }));
 const jsonLd = [websiteSchema(lang), organizationSchema(lang), webPageSchema({ name: x.h1, description: x.description, path, lang }), webApplicationSchema({ name: x.h1, description: x.description, path, lang }), faqSchema(faqs, lang)];
 const sv = lang === 'sv';
