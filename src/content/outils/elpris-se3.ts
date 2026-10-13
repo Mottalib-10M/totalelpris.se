@@ -54,7 +54,7 @@ export default defineGuide({
       const rows = v.rader.map((r, i) => [namn[i], h.ore(r.r), h.ore(r.f1), h.ore(r.f3), h.ore(r.an)]);
       return `<h2>Fyra avtalstyper i SE3, senaste månaden</h2>
 ${h.table(['Bostad', 'Rörligt', 'Fast 1 år', 'Fast 3 år', 'Anvisat'], rows, `SCB, elhandelspris exkl. moms, energiskatt och nät, ${mn(h, h.M.SENASTE_MANAD)}.`, ['l', 'r', 'r', 'r', 'r'])}
-<p>En lägenhet betalar mer per kWh än en villa för samma avtalstyp. Det beror på att elhandlarnas fasta avgifter fördelas på färre kilowattimmar i statistiken, och på att avtalen ser olika ut. Fastprisavtalet är SCB:s snitt för avtal som tecknades den månaden, inte priset på ett avtal som löper sedan tidigare.</p>
+<p>I SCB:s siffror betalar en lägenhet mer per kWh än en villa för samma avtalstyp, och den som aldrig valt avtal betalar mer än den som har rörligt pris. Fastprisavtalet är SCB:s snitt för avtal som tecknades den månaden, inte priset på ett avtal som löper sedan tidigare.</p>
 <h2>Årssnitt för rörligt pris sedan 2022</h2>
 ${h.table(['År', 'Villa med elvärme, exkl. moms', 'Inkl. moms'], v.ar.map((x) => [String(x.y), h.ore(x.s), h.ore(x.s * v.mo)]), 'SCB, rörligt avtal, SE3, medel av månadspriserna.', ['l', 'r', 'r'])}
 <p>Tabellen visar elhandeln. Lägg till nätet och energiskatten för att få det du betalar; skatten var ${h.ore(h.P.skatt.energiskatt_2025_ore)} år 2025 och är ${h.ore(h.P.skatt.energiskatt_ore)} i år. Månad för månad finns serien på sidan ${h.a('elpriser-per-manad', 'elpriser per månad')}, och ${h.a('fast-eller-rorligt', 'fast eller rörligt elpris')} räknar på din förbrukning.</p>
@@ -90,7 +90,7 @@ ${h.table(['År', 'Villa med elvärme, exkl. moms', 'Inkl. moms'], v.ar.map((x) 
       const rows = v.rader.map((r, i) => [namn[i], h.ore(r.r), h.ore(r.f1), h.ore(r.f3), h.ore(r.an)]);
       return `<h2>Four contract types in SE3, latest month</h2>
 ${h.table(['Home', 'Variable', 'Fixed 1 yr', 'Fixed 3 yrs', 'Default'], rows, `Statistics Sweden, retail price before VAT, energy tax and grid, ${mn(h, h.M.SENASTE_MANAD)}.`, ['l', 'r', 'r', 'r', 'r'])}
-<p>A flat pays more per kWh than a house on the same contract type, because retailers’ fixed charges are spread over fewer kilowatt-hours in the statistics and the contracts themselves differ. The fixed price is the average of contracts signed that month, not the price of one you already hold.</p>
+<p>In SCB’s figures a flat pays more per kWh than a house on the same contract type, and households that never chose a contract pay more than those on a variable price. The fixed price is the average of contracts signed that month, not the price of one you already hold.</p>
 <h2>Yearly averages for the variable price since 2022</h2>
 ${h.table(['Year', 'Heated house, before VAT', 'Incl. VAT'], v.ar.map((x) => [String(x.y), h.ore(x.s), h.ore(x.s * v.mo)]), 'Statistics Sweden, variable contract, SE3, mean of monthly prices.', ['l', 'r', 'r'])}
 <p>The table covers retail energy only. Add grid and energy tax to get what you pay; the tax was ${h.ore(h.P.skatt.energiskatt_2025_ore)} in 2025 and is ${h.ore(h.P.skatt.energiskatt_ore)} this year. Month by month, the series is on ${h.a('elpriser-per-manad', 'electricity prices by month')}, and ${h.a('fast-eller-rorligt', 'fixed or variable price')} works it out for your consumption.</p>
