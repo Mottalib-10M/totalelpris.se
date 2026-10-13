@@ -32,11 +32,11 @@ h1, h2, h3, h4 { hyphens: auto; overflow-wrap: break-word; }
    lignes dans une demi-colonne. La rangée sert de conteneur (100cqw = sa largeur exacte) et les
    colonnes ne peuvent pas grandir (minmax(0, 1fr)) : l'aide déborde sans rien pousser.
    Si le voisin a aussi une aide, chacune reste dans sa colonne. */
-form :is(.grid-cols-2, .grid-cols-\[1fr_auto\]) { container-type: inline-size; }
+form :is(.grid-cols-2, .sm\:grid-cols-2, .grid-cols-\[1fr_auto\]) { container-type: inline-size; }
 form .grid-cols-\[1fr_auto\] { grid-template-columns: minmax(0, 1fr) auto; }
-form :is(.grid-cols-2, .grid-cols-\[1fr_auto\]) > * { grid-template-columns: minmax(0, 1fr); }
-form :is(.grid-cols-2, .grid-cols-\[1fr_auto\]) > :first-child > [id$="-help"] { width: 100cqw; }
-form :is(.grid-cols-2, .grid-cols-\[1fr_auto\]):has(> :nth-child(2) [id$="-help"]) > :first-child > [id$="-help"] { width: auto; }
+form :is(.grid-cols-2, .sm\:grid-cols-2, .grid-cols-\[1fr_auto\]) > * { grid-template-columns: minmax(0, 1fr); }
+form :is(.grid-cols-2, .sm\:grid-cols-2, .grid-cols-\[1fr_auto\]) > :first-child > [id$="-help"] { width: 100cqw; }
+form :is(.grid-cols-2, .sm\:grid-cols-2, .grid-cols-\[1fr_auto\]):has(> :nth-child(2) [id$="-help"]) > :first-child > [id$="-help"] { width: auto; }
 
 /* §10.2 : la typographie porte le design. Titres en serif, corps en sans-serif ;
    tableaux de style journal (filet sous l'en-tete, pas de bordures verticales,
