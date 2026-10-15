@@ -15,8 +15,6 @@ import { P } from '../lib/engine/params';
 import type { SourceKey } from '../lib/engine/params';
 import { STANDARD_NAT } from '../lib/verktyg';
 import { faqSchema, organizationSchema, websiteSchema, webPageSchema, webApplicationSchema } from '../lib/seo';
-import { LAST_UPDATED, LANG_TAGS } from '../data/site-config';
-import { displayDate } from '../lib/format';
 interface Props { lang: Locale }
 const { lang } = Astro.props;
 const x = HOME[lang];
@@ -34,7 +32,7 @@ const groups = navCategories(lang);
   <header class="mb-4">
     <h1 class="text-3xl font-bold text-navy-900 md:text-4xl">{x.h1}</h1>
     <p class="mt-2 text-lg text-navy-700">{x.intro}</p>
-    <p class="mt-2 text-sm text-navy-700">{sv ? 'Energiskatt och nätavgifter för' : 'Energy tax and grid fees for'} {P.year}, {sv ? 'kontrollerade' : 'checked'} <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, LANG_TAGS[lang])}</time> · <a href={route('method', lang)} class="underline hover:text-navy-900">{sv ? 'Metod och källor' : 'Method and sources'}</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">{sv ? 'Om oss' : 'About'}</a></p>
+    <p class="mt-2 text-sm text-navy-700">{sv ? 'Energiskatt och nätavgifter för' : 'Energy tax and grid fees for'} {P.year} · <a href={route('method', lang)} class="underline hover:text-navy-900">{sv ? 'Metod och källor' : 'Method and sources'}</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">{sv ? 'Om oss' : 'About'}</a></p>
   </header>
   <Clamp text={resume} lang={lang} id="clamp-home" sentences={1} class="mb-5" />
   <div data-outil>

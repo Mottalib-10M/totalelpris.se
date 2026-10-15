@@ -13,7 +13,7 @@ ne voyait, c'est-à-dire la trame que le lecteur perçoit :
   §8   Auteur — encart auteur sur toutes les pages, `Person` avec `jobTitle` et
                 `knowsAbout`, `founder` et `foundingDate` sur l'`Organization`,
                 `publishingPrinciples`, `dateModified` sur les guides.
-  §8.4 Confiance — date de mise à jour visible en haut ET en bas, disclaimer.
+  §8.4 Confiance — date en bas (en haut seulement sur une page de lecture), en toutes lettres, disclaimer.
   §10.1 Template — marqueurs « site généré » (dégradé violet, cartes flottantes,
                 émoji en puce, grille de features…). Trois sur une page = défaut.
   §18.2 Pied et haut de page — liens légaux obligatoires présents partout.
@@ -126,6 +126,8 @@ ISO_DATE = re.compile(r'\b20\d{2}-\d{2}-\d{2}\b')
 # Chercher la date dans le texte visible ne prouvait donc plus rien : c'est
 # l'élément <time> daté qu'il faut trouver, en haut comme en bas.
 TIME_DATE = re.compile(r'<time[^>]+datetime="20\d{2}-\d{2}-\d{2}', re.I)
+# Champ de simulateur dans le <main> (même définition que check-simulateurs.py).
+SIMU_INPUT = re.compile(r'<input\b(?![^>]*type="(?:hidden|search|checkbox|radio|submit|button)")[^>]*>|<select\b|<button\b[^>]*\baria-pressed=|role="slider"', re.I)
 
 
 def _norm(t: str) -> str:
@@ -363,18 +365,47 @@ for f in sorted(x for x in glob.glob(f'{site}/{sortie}/**/index.html', recursive
         if k == 'secondaire' and not any(n.get('dateModified') for n in nodes):
             flags.append('pas de dateModified')
 
-    # ---- §8.4 confiance : date visible en haut ET en bas -----------------
+    # ---- §8.4 confiance : où se montre la date de mise à jour -------------
+    # Règle du 2026-10-15 (pensionretraite.com) : sur une page qui commence par un
+    # simulateur, et sur un accueil, la date ne se met pas au-dessus du simulateur :
+    # elle repousse le titre sans rien apprendre au visiteur. Elle vit en bas de page
+    # et dans WebPage.dateModified. Une page de lecture (article, guide dont le
+    # simulateur vient après le texte) garde une petite date en haut. Partout, la
+    # date affichée est écrite en toutes lettres, jamais « 2026-10-07 ».
     if not noindex:
-        # « En haut » veut dire à hauteur du titre, pas forcément avant lui : la
-        # signature « Par X · Mis à jour le … » se place presque toujours juste
-        # sous le <h1>. On garde donc les 2 000 caractères qui suivent sa
-        # fermeture (netsalaire.com, 2026-09-24).
-        head = doc[:doc.find('</h1>') + 2000] if '</h1>' in doc else doc[:4000]
+        mm = re.search(r'<main\b.*?</main>', doc, re.S)
+        main = mm.group(0) if mm else doc
+        h2 = re.search(r'<h2\b', main)
+        first_in = SIMU_INPUT.search(main)
+        h1end = main.find('</h1>')
+        h1end = main.find('</h1>')
+        accueil = path == '/' or re.fullmatch(r'[a-z]{2}(?:-[a-z]{2,4})?', path.strip('/')) is not None
+        # « Commence par un simulateur » : moins de 250 mots entre le titre et le premier
+        # champ. Le premier H2 ne suffit pas : le panneau du simulateur a souvent le sien
+        # (« Votre situation », pensionretraite.com).
+        mene_par_simu = bool(first_in) and len(strip_tags(main[max(h1end, 0):first_in.start()]).split()) < 250
         foot = doc[doc.rfind('<footer'):] if '<footer' in doc else doc[-4000:]
-        if not (TIME_DATE.search(head) or ISO_DATE.search(strip_tags(head))):
-            flags.append('pas de date de mise à jour en haut')
-        if not (TIME_DATE.search(foot) or ISO_DATE.search(strip_tags(foot))):
+        if mene_par_simu or accueil:
+            # Tout ce qui précède le simulateur (ou le premier H2 d'un accueil sans simulateur).
+            stop = first_in.start() if first_in else (h2.start() if h2 else len(main))
+            avant = (doc[:mm.start()] if mm else '') + main[:stop]
+            avant = re.sub(r'<script.*?</script>', ' ', avant, flags=re.S)
+            if TIME_DATE.search(avant):
+                flags.append('date de mise à jour au-dessus du simulateur : la mettre en bas de page (§8.4)')
+        elif k != 'service' and any(str(x.get('@type')) in ('Article', 'BlogPosting', 'NewsArticle') for x in nodes):
+            # Page de lecture = article déclaré (Article, BlogPosting). Une page pays ou une
+            # page de liste, même longue, est un accueil de rubrique (pensionretraite.com).
+            # « En haut » veut dire à hauteur du titre : la signature « Par X · Mis à
+            # jour le … » se place souvent juste sous le <h1> (netsalaire.com, 2026-09-24).
+            head = doc[:doc.find('</h1>') + 2000] if '</h1>' in doc else doc[:4000]
+            if not TIME_DATE.search(head):
+                flags.append('pas de date de mise à jour en haut (page de lecture)')
+        if not (TIME_DATE.search(foot) or ISO_DATE.search(strip_tags(foot)) or TIME_DATE.search(doc[-6000:])):
             flags.append('pas de date de mise à jour en bas')
+        # Seule la date de mise à jour est visée : « Stand 2026-10-01 » ou une période
+        # « 2026-01-01 bis 2026-12-31 » dans un tableau de paramètres restent permises.
+        if re.search(r'<time\b[^>]*>\s*20\d{2}-\d{2}-\d{2}\s*</time>', doc):
+            flags.append('date affichée au format 2026-10-07 : l\'écrire en toutes lettres (§8.4)')
         if not DISCLAIMER.search(strip_tags(doc)):
             flags.append('pas de disclaimer')
 
