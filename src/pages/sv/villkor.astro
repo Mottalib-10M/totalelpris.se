@@ -1,7 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { AUTHOR_NAME, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 import { P } from '../../lib/engine/params';
 const lang = 'sv';
@@ -21,7 +21,7 @@ const lang = 'sv';
     <h2>Upphovsrätt och data</h2>
     <p>Texter, grafik och kod tillhör utgivaren. SCB:s statistik återges enligt licensen CC0, Energimarknadsinspektionens öppna data enligt myndighetens villkor (fri återanvändning) och lagtext enligt offentlighetsprincipen. Spotpriser från elbörsen återpubliceras inte.</p>
     <h2>Inbäddning</h2><p>Kalkylatorn får bäddas in gratis med synlig länk: se <a href={route('widget', lang)}>Bädda in kalkylatorn</a>.</p>
-    <h2>Personuppgifter och cookies</h2><p>Det du skriver in, även en klistrad prislista, stannar i din webbläsare. Se <a href={route('privacy', lang)}>integritetspolicyn</a> och sidan om <a href={route('cookies', lang)}>cookies</a>.</p>
+    <h2>Personuppgifter och cookies</h2><p>Det du skriver in, även en klistrad prislista, stannar i din webbläsare.{GA4_ID && ' Besöken mäts med Google Analytics, som sätter cookies (_ga, högst 13 månader); ingen reklam.'} Se <a href={route('privacy', lang)}>integritetspolicyn</a> och sidan om <a href={route('cookies', lang)}>cookies</a>.</p>
     <h2>Anmälan av innehåll</h2><p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, med sidans adress och skälet.</p>
     <h2>Tillämplig lag</h2><p>Fransk lag, där utgivaren är etablerad. Tvister prövas i första hand i godo, annars av behörig domstol i {LEGAL.jurisdiction}; en konsument behåller det skydd som lagen i hemlandet ger. Uppdaterad {LAST_UPDATED}.</p>
   </div>

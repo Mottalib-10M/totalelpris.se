@@ -1,17 +1,32 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
-import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { CLARITY_ID, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
 import { route } from '../../i18n/routes';
-import { P } from '../../lib/engine/params';
 const lang = 'sv';
+const description = GA4_ID ? 'Elpriskollen sätter bara Google Analytics cookies för besöksstatistik: namn, syfte, livslängd på högst 13 månader, leverantör och hur du invänder.' : 'Elpriskollen sätter inga cookies och sparar inget på din enhet. Totalpriset på el, nätavgiften och apparatkostnaden räknas i webbläsaren.';
 ---
-<PageLayout title={`Cookies – ${SITE_NAMES[lang]}`} description="Elpriskollen sätter inga cookies och sparar inget på din enhet. Totalpriset på el, nätavgiften och apparatkostnaden räknas i webbläsaren utan spårare." lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
+{/* Skriven för hand på tramens modell (gen-legal-pages.py hanterar inte svenska), GA4-beslutet
+     av den 2026-10-17. Samma fakta som de franska och engelska sidorna. */}
+<PageLayout title={`Cookies – ${SITE_NAMES[lang]}`} description={description} lang={lang} noindex={true} breadcrumbs={[{ label: 'Cookies' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Cookies</h1>
-    <p>Webbplatsen sätter inga cookies och använder inte webbläsarens lokala lagring. Elpriskalkylen, jämförelsen av nätavgifter och apparatkalkylatorerna behöver inget sparat: allt räknas om när du ändrar ett värde.</p>
-    <h2>Ingen spårning, ingen reklam</h2><p>Det finns inga annonser, inga sociala knappar och ingen spårare. Därför finns ingen cookiebanner. För att kontrollera att sidorna fungerar (fel, laddningstider, klick som inte gör något) använder webbplatsen Microsoft Clarity utan cookies och med sidans innehåll maskerat: inget sparas på din enhet.</p>
-    <h2>Inbäddad kalkylator</h2><p>Kalkylatorn som andra webbplatser bäddar in sätter inte heller några cookies. Mer i <a href={route('privacy', lang)}>integritetspolicyn</a>.</p>
+    {GA4_ID ? (<>
+    <p>Webbplatsen sätter Google Analytics cookies för besöksstatistik och inga andra: inga reklamcookies och inga cookies från sociala medier. Mer om behandlingen finns i <a href={route('privacy', lang)}>integritetspolicyn</a>.</p>
+    <h2>Cookies som sätts</h2>
+    <table><thead><tr><th>Namn</th><th>Leverantör</th><th>Syfte</th><th>Livslängd</th></tr></thead><tbody>
+    <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Skilja besökare åt med en slumpmässig identifierare</td><td>Högst 13 månader (390 dagar)</td></tr>
+    <tr><td><code>_ga_{GA4_ID.replace('G-', '')}</code></td><td>Google Analytics</td><td>Hålla reda på det pågående besöket</td><td>Högst 13 månader (390 dagar)</td></tr>
+    </tbody></table>
+    <p>Livslängden förlängs inte vid varje besök; Googles standard är 2 år och webbplatsen kortar den. Syfte: besöksstatistik (visade sidor, hänvisande sida, enhet, ungefärligt land). IP-adressen anonymiseras: Google Analytics 4 varken loggar eller sparar den. Ingen reklam och ingen delning för reklam: reklamlagring, reklamanpassning och Google-signaler är avstängda.</p>
+    <p>Leverantör: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Uppgifter kan överföras till Google LLC i USA enligt EU–U.S. Data Privacy Framework och Europeiska kommissionens standardavtalsklausuler. Lagring hos Google: 14 månader. Rättslig grund: utgivarens berättigade intresse (artikel 6.1 f i dataskyddsförordningen).</p>
+    <h2>Invända mot dessa cookies</h2>
+    <p>Blockera eller radera cookies i webbläsarens inställningar, eller installera <a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener" target="_blank">Googles tillägg för att välja bort Google Analytics</a>. Webbplatsen och kalkylatorerna fungerar på samma sätt.</p>
+    </>) : (<>
+    <p>Webbplatsen <strong>sätter inga cookies</strong>. Mer om behandlingen finns i <a href={route('privacy', lang)}>integritetspolicyn</a>.</p>
+    </>)}
+    {CLARITY_ID && (<><h2>Microsoft Clarity, utan cookies</h2><p>Sidornas stabilitet (fel, laddningstider, klick som inte gör något) kontrolleras med Microsoft Clarity utan cookies: Clarity sätter inga cookies, varje sidvisning får en engångsidentifierare och sidans innehåll och det du skriver in maskeras. Blockerar du <code>clarity.ms</code> stoppas den.</p></>)}
+    <h2>Det du skriver in</h2>
+    <p>Elpriskalkylen, jämförelsen av nätavgifter och apparatkalkylatorerna räknar i din webbläsare: det du skriver in skickas inte till någon server och försvinner när du stänger sidan. Kalkylatorn som andra webbplatser bäddar in mäter ingenting.</p>
     <p>Frågor: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Uppdaterad {LAST_UPDATED}.</p>
   </div>
 </PageLayout>

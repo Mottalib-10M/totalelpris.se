@@ -1,22 +1,31 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { CLARITY_ID, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, LEGAL, SITE_NAMES } from '../../data/site-config';
 import { route } from '../../i18n/routes';
-import { P } from '../../lib/engine/params';
 const lang = 'sv';
 ---
-<PageLayout title={`Integritetspolicy – ${SITE_NAMES[lang]}`} description="Elpriskollen räknar i din webbläsare: spotpris, förbrukning och klistrade prislistor skickas inte till oss. Så hanteras uppgifter enligt dataskyddsförordningen." lang={lang} noindex={true} breadcrumbs={[{ label: 'Integritetspolicy' }]} showAuthor={false}>
+<PageLayout title={`Integritetspolicy – ${SITE_NAMES[lang]}`} description={GA4_ID ? 'Elpriskollen räknar i din webbläsare och mäter besök med Google Analytics, med cookies och utan reklam. Så hanteras uppgifter enligt dataskyddsförordningen.' : 'Elpriskollen räknar i din webbläsare: spotpris, förbrukning och klistrade prislistor skickas inte till oss. Så hanteras uppgifter enligt dataskyddsförordningen.'} lang={lang} noindex={true} breadcrumbs={[{ label: 'Integritetspolicy' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     <h1>Integritetspolicy</h1>
     <h2>Personuppgiftsansvarig</h2>
     <LegalIdentity lang={lang} />
     <h2>Det du skriver in</h2>
     <p>Spotpris, påslag, förbrukning, nätområde och de prislistor du klistrar in behandlas bara i din webbläsare. Inget skickas till oss eller till någon annan, och webbplatsen hämtar inga elpriser från tredje part medan du räknar. Om du använder delningslänken står dina värden i adressen; den du skickar länken till ser dem.</p>
+    {GA4_ID ? (<>
+    <h2>Besöksstatistik med Google Analytics</h2>
+    <p>Webbplatsen använder Google Analytics 4 för att räkna besök och se vilka sidor som är till nytta: visade sidor, hänvisande sida, besökets längd, typ av enhet och webbläsare, ungefärligt land och ort. Google Analytics sätter då två cookies på din enhet: <code>_ga</code>, som skiljer besökare åt med en slumpmässig identifierare, och <code>_ga_{GA4_ID.replace('G-', '')}</code>, som håller reda på besöket. Livslängden är högst 13 månader (390 dagar) och förlängs inte vid varje besök; Googles standard är 2 år. Se också sidan om <a href={route('cookies', lang)}>cookies</a>.</p>
+    <p>IP-adressen anonymiseras: Google Analytics 4 varken loggar eller sparar den och använder den bara vid insamlingen för att härleda ungefärligt land och ort. Sidadressen som skickas till Google Analytics saknar parametrar, så värden i en delningslänk följer inte med. Webbplatsen visar ingen reklam: reklamlagring, reklamdata, reklamanpassning och Google-signaler är avstängda, och statistiken delas inte med någon annonsör.</p>
+    <p>Syfte: besöksstatistik. Rättslig grund: utgivarens berättigade intresse (artikel 6.1 f i dataskyddsförordningen). Leverantör: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, som personuppgiftsbiträde (artikel 28). Uppgifter kan överföras till Google LLC i USA enligt EU–U.S. Data Privacy Framework och Europeiska kommissionens standardavtalsklausuler. Lagring hos Google: 14 månader för uppgifter på besöks- och identifierarnivå, därefter radering; bara anonyma summor finns kvar.</p>
+    <p>Invända utan att skriva till oss: blockera eller radera cookies i webbläsarens inställningar, eller installera <a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener" target="_blank">Googles tillägg för att välja bort Google Analytics</a>. Webbplatsen fungerar på samma sätt.</p>
+    </>) : (<>
     <h2>Inga cookies</h2>
-    <p>Webbplatsen sätter inga cookies och sparar inget i webbläsarens lokala lagring. Se också sidan om <a href={route('cookies', lang)}>cookies</a>.</p>
+    <p>Webbplatsen sätter inga cookies och använder inget verktyg för besöksstatistik eller reklam. Se också sidan om <a href={route('cookies', lang)}>cookies</a>.</p>
+    </>)}
+    {CLARITY_ID && (<>
     <h2>Anonym stabilitetskontroll (Microsoft Clarity)</h2>
-    <p>För att kontrollera att webbplatsen fungerar (fel, laddningstider, klick som inte gör något) använder vi Microsoft Clarity utan cookies: ingen cookie sätts, varje sidvisning får en engångsidentifierare, besök kopplas inte ihop och sidans innehåll maskeras. Leverantör: Microsoft Ireland Operations Limited. Lagring: 30 dagar, sammanställningar upp till 13 månader. Rättslig grund: vårt berättigade intresse av en fungerande webbplats (GDPR art. 6.1 f). Du kan invända genom att blockera clarity.ms i webbläsaren eller genom att skriva till oss.</p>
+    <p>För att kontrollera att webbplatsen fungerar (fel, laddningstider, klick som inte gör något) använder vi Microsoft Clarity utan cookies: Clarity sätter ingen cookie, varje sidvisning får en engångsidentifierare, besök kopplas inte ihop och sidans innehåll maskeras. Leverantör: Microsoft Ireland Operations Limited. Lagring: 30 dagar, sammanställningar upp till 13 månader. Rättslig grund: vårt berättigade intresse av en fungerande webbplats (GDPR art. 6.1 f). Du kan invända genom att blockera clarity.ms i webbläsaren eller genom att skriva till oss.</p>
+    </>)}
     <h2>Teknisk loggning hos webbvärden</h2>
     <p>Webbvärden kan, som alla webbservrar, tillfälligt registrera IP-adress och tidpunkt för att leverera sidorna och skydda mot missbruk. Vi har ingen tillgång till dessa loggar för att identifiera besökare. Värd: se <a href={route('terms', lang)}>villkor och utgivare</a>.</p>
     <h2>E-post</h2>

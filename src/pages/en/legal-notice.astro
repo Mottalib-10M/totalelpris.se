@@ -1,7 +1,7 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
 import LegalIdentity from '../../components/LegalIdentity.astro';
-import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
+import { AUTHOR_NAME, CLARITY_ID, CONTACT_EMAIL, GA4_ID, LAST_UPDATED, LEGAL, SITE_NAMES, SITE_URL } from '../../data/site-config';
 import { route } from '../../i18n/routes';
 import { P } from '../../lib/engine/params';
 const lang = 'en';
@@ -21,7 +21,10 @@ const lang = 'en';
     <h2>Copyright and data</h2>
     <p>Texts, graphics and code belong to the publisher. Statistics Sweden data is reused under CC0, Ei open data under the authority’s free-reuse terms, and legal texts under the Swedish principle of public access. Power-exchange spot prices are not republished.</p>
     <h2>Embedding</h2><p>The calculator may be embedded free of charge with a visible link: see <a href={route('widget', lang)}>Embed the calculator</a>.</p>
-    <h2>Personal data and cookies</h2><p>What you type, including a pasted price list, stays in your browser. See the <a href={route('privacy', lang)}>privacy policy</a> and the <a href={route('cookies', lang)}>cookies</a> page.</p>
+    {/* gen-legal-pages:terms */}
+    <h2>Personal data and cookies</h2>
+    {GA4_ID ? (<p>What you type in the calculators stays in your browser. The site sets Google Analytics audience measurement cookies (<code>_ga</code>, <code>_ga_{GA4_ID.replace('G-', '')}</code>, 13 months at most), with no advertising{CLARITY_ID && '; page stability is monitored with Microsoft Clarity, cookie-free'}. Details, legal basis and how to object: <a href={route('privacy', lang)}>privacy policy</a> and <a href={route('cookies', lang)}>cookies</a> page.</p>) : (<p>What you type in the calculators stays in your browser and the site sets no cookies{CLARITY_ID && '; page stability is monitored anonymously with Microsoft Clarity, cookie-free'}. See the <a href={route('privacy', lang)}>privacy policy</a> and the <a href={route('cookies', lang)}>cookies</a> page.</p>)}
+    {/* /gen-legal-pages:terms */}
     <h2>Reporting content</h2><p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, with the page address and the reason.</p>
     <h2>Governing law</h2><p>French law, where the publisher is established. Disputes are first settled amicably, otherwise by the competent court in {LEGAL.jurisdiction}; a consumer keeps the protection of the law of their home country. Updated {LAST_UPDATED}.</p>
   </div>
